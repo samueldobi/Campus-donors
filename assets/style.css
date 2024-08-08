@@ -66,11 +66,35 @@ nav{
 }
 /* Services section */
 
-/* Help-donate section */
+/* why-donate section */
+.why-donate-text{
+    transform: translateY(10%);
+}
+.learn-btn{
+    background-color:var(--red) ;
+    border: inherit;
+}
 /* .help-img {
     width: ;
 } */
-/* Help-donate section */
+/* why-donate section */
+
+/* Testimonials section */
+.card{
+    
+    border:none;
+}
+
+.user-content p{
+    margin-top:5px;
+    font-size:12px;
+}
+
+
+.ratings i{
+    color:blue;
+}
+/* Testimonials section */
 
 
 /* Footer  section */
@@ -78,3 +102,15 @@ nav{
     background-color: var(--grey);
 }
 /* Footer  section */
+/* .dropdown-menu{
+    background-color: red;
+    display: none;
+} */
+ /* Media Queries */
+ @media screen and (max-width: 480px) {
+    .why-donate-text{
+        transform: translateY(1%);
+    }
+  }
+  
+ /* Media Queries */

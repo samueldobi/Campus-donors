@@ -33,13 +33,13 @@
               <a class="nav-link mx-2" href="#">Pricing</a>
             </li>
             <li class="nav-item dropdown">
-              <!-- <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Company
-              </a> -->
+              <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                How it works
+              </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Criteria</a></li>
-                <!-- <li><a class="dropdown-item" href="#">About Us</a></li> -->
-                <li><a class="dropdown-item" href="#">Contact us</a></li>
+                <li><a class="dropdown-item" href="#">How to donate</a></li>
+                <li><a class="dropdown-item" href="#">Who can donate</a></li>
+                <li><a class="dropdown-item" href="#">Why donate </a></li>
               </ul>
             </li>
           </ul>
