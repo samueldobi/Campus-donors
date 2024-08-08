@@ -79,6 +79,20 @@
     </div>
  </section>
 <!-- ======= Services Section ======= -->
+
+<!-- ======= Help Section ======= -->
+ <section class="help-donate mt-5 mb-5">
+    <div class="d-sm-flex">
+        <div class="col-12 col-md-6 help-text  text-center ">
+            <p class=" fs-3 fw-bold">Hello</p>
+            <p class=" fs-3 fw-bold ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reprehenderit quam qui, temporibus quaerat voluptates expedita labore repudiandae esse provident?</p>
+        </div>
+        <div class="help-img">
+            <img src="assets/images/help-img.webp" class="img-fluid">
+        </div>
+    </div>
+ </section>
+<!-- ======= Help Section ======= -->
  
 
 <?php include 'includes/footer.php' ?>

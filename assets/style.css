@@ -14,6 +14,11 @@ body{
     font-weight: 400;
     font-style: normal;
 }
+/* section {
+    padding: 60px 0;
+    overflow: hidden;
+    margin-top: 60px;
+  } */
 /* General Styling */
 /* Navbar Styling */
 nav{
@@ -43,9 +48,9 @@ nav{
 /* Hero Section */
 
 /* About Us Section */
-.about-header{
-    /* word-spacing: 10px; */
-}
+/* .about-header{
+    word-spacing: 10px;
+} */
 #campus{
     border-bottom: 5px solid var(--red);
 }
@@ -60,6 +65,13 @@ nav{
     width: 50%;
 }
 /* Services section */
+
+/* Help-donate section */
+/* .help-img {
+    width: ;
+} */
+/* Help-donate section */
+
 
 /* Footer  section */
 .footer{
