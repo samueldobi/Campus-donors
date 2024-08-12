@@ -94,9 +94,6 @@ nav{
 .ratings i{
     color:blue;
 }
-/* Testimonials section */
-
-
 /* Footer  section */
 .footer{
     background-color: var(--grey);
@@ -114,3 +111,9 @@ nav{
   }
   
  /* Media Queries */
+
+ /* Find Donor Section */
+ .form-div{
+    border: 1px solid #000;
+ }
+ /* Find Donor Section */

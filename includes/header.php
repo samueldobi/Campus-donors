@@ -27,17 +27,20 @@
               <a class="nav-link mx-2 " aria-current="page" href="index.php">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-2" href="register.php">Register</a>
+              <a class="nav-link mx-2" href="find_donor.php">Find Donor</a>
             </li>
             <li class="nav-item">
               <a class="nav-link mx-2" href="donate.php">Donate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="contact.php">Contact Us</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 How it works
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">How to donate</a></li>
+                <li><a class="dropdown-item" href="how_to_donate.php">How to donate</a></li>
                 <li><a class="dropdown-item" href="#">Who can donate</a></li>
                 <li><a class="dropdown-item" href="#">Why donate </a></li>
               </ul>
@@ -45,7 +48,7 @@
           </ul>
           <ul class="navbar-nav ms-auto d-none d-lg-inline-flex">
             <li class="nav-item mx-2">
-            <a class="nav-link mx-2" href="#">Login</a>
+            <a class="nav-link mx-2" href="#">Login/Register</a>
               <!-- <a class="nav-link text-dark h5" href="" target="blank"><i class="fab fa-google-plus-square"></i></a> -->
             </li>
             <li class="nav-item mx-2">

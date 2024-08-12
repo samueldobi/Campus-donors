@@ -1,14 +1,13 @@
-<?php include 'includes/header.php' ?>
-<section class="donate-main">
+<?php include 'includes/header.php'?>
+<section class="register-intro m-3 p-3">
 <div class="container">
-    <div class="row  text-md-center mt-5 mb-5">
-        <h2 class="">
-        Join the Lifesaving Mission
-        </h2>
-        <p class="">
-        By registering for our blood donation program, you’re taking a vital step toward saving lives and making a meaningful impact on our community. Your commitment helps us ensure that blood is readily available for those in need, and we are deeply grateful for your willingness to contribute to this life-saving cause. Thank you for being a hero to those who need it most.
+    <div class="row text-md-center mt-5 mb-5">
+        <h2 class="pb-3">Find a Lifesaving Donor Today</h2>
+        <p class="register-text">
+        Our blood donor matching service connects you with generous individuals ready to make a life-saving difference. By finding a donor through our platform, you’re ensuring that those in need receive the help they require quickly and efficiently. We appreciate your trust in us to support this critical mission, and together, we can make a profound impact.
         </p>
     </div>
+
 
     <div class="row mt-5 mb-5  align-items-center justify-content-center">
         <h3 class=" text-md-center p-2 mt-2 mb-3">Register Your Details</h3>
@@ -88,10 +87,10 @@
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                     <label class="form-check-label" for="exampleCheck1">Check me out</label>
                 </div> -->
-                <button type="submit" class="btn btn-primary">Register</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
            </form>
         </div>
     </div>
 </div>
 </section>
-<?php include 'includes/footer.php' ?>
+<?php include 'includes/footer.php'?>
