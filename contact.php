@@ -1,6 +1,6 @@
 <?php include 'includes/header.php' ?>
 <section class="contact mt-5 mb-5 " id="contact">
-<div class="container border">
+<div class="container border col-10 col-md-6 ">
   <p class="text-center fs-1 p-3 fw-bold">
     Contact Us
   </p>
@@ -22,7 +22,7 @@
 <!-- <button type="button" class="btn btn-success my-2">Submit</button> -->
 
 <div class="button-links p-2">
-  <input type="submit"  value="Send"  class="btn  text-light  btn-style">
+  <input type="submit"  value="Send"  class="btn  text-light  btn-style fs-5" style="width: 100%;">
 
 </div>
 </div>

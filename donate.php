@@ -12,19 +12,19 @@
 
     <div class="row mt-5 mb-5  align-items-center justify-content-center">
         <h3 class=" text-md-center p-2 mt-2 mb-3">Register Your Details</h3>
-        <div class="form-div col-10 col-md-6 align-items-center justify-content-center">
+        <div class="border rounded col-10 col-md-6 align-items-center justify-content-center">
 
             <form class="">
 
             <!-- Name Label -->
-                <div class="mb-3">
+                <div class="m-3">
                     <label for="name" class="form-label fw-bold">Name</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 </div>
             <!-- Name Label -->
 
             <!-- Email Input -->
-            <div class="mb-3">
+            <div class="m-3">
                 <label for="exampleInputEmail1" class="form-label fw-bold">Email address</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 <div id="emailHelp" class="form-text">Your Email is safe</div>
@@ -32,7 +32,7 @@
             <!-- Email Input -->
              
              <!-- Blood Type Input -->
-                <div class="mb-3">
+                <div class="m-3">
                     <label for="" class="fw-bold">Blood Type:</label>
                     <div class="form-floating">
 
@@ -52,7 +52,7 @@
              <!-- Blood Type Input -->   
              
             <!-- Faculty Type Input -->
-            <div class="mb-3">
+            <div class="m-3">
                     <label for="" class="fw-bold">Faculty</label>
                     <div class="form-floating">
 
@@ -88,7 +88,11 @@
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                     <label class="form-check-label" for="exampleCheck1">Check me out</label>
                 </div> -->
-                <button type="submit" class="btn btn-primary">Register</button>
+              
+                <div class=" button-links p-2">
+                    <button type="submit" class="btn text-light  btn-style fs-5" style="width: 100%;">Register</button>
+
+                </div>
            </form>
         </div>
     </div>

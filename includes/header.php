@@ -40,8 +40,7 @@
                 How it works
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="how_to_donate.php">How to donate</a></li>
-                <li><a class="dropdown-item" href="#">Who can donate</a></li>
+                <li><a class="dropdown-item" href="who_can_donate.php">Who can donate</a></li>
                 <li><a class="dropdown-item" href="#">Why donate </a></li>
               </ul>
             </li>
