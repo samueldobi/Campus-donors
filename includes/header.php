@@ -27,10 +27,10 @@
               <a class="nav-link mx-2 " aria-current="page" href="index.php">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-2" href="donate.php">Donate</a>
+              <a class="nav-link mx-2" href="register.php">Register</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-2" href="#">Pricing</a>
+              <a class="nav-link mx-2" href="donate.php">Donate</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">

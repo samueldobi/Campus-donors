@@ -98,7 +98,6 @@
 <!-- ======= Why Donate  Section ======= -->
 
 <!-- ======= Testimonials  Section ======= -->
- 
 <div class="container mt-5 mb-5 g-2">
     <div class="row g-2 ">
         <p class="testimonials-header text-lg-center text-sm-start fw-bold fs-2">
@@ -207,5 +206,7 @@
 </div>
 <!-- ======= Testimonials  Section ======= -->
  
+<!-- ======= Contact  Section ======= -->
+<!-- ======= Contact  Section ======= -->
 
 <?php include 'includes/footer.php' ?>
