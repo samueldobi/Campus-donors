@@ -4,6 +4,7 @@
     --darkblue: #041562;
     --lightblue: #11468F;
     --grey: #EEEEEE;
+    --new: #FFF1DB;
 }
 /* General Styling */
 html {
@@ -13,6 +14,9 @@ body{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+a{
+    text-decoration: none;
 }
 /* section {
     padding: 60px 0;
@@ -58,11 +62,20 @@ nav{
 
 /* Services section */
 .services{
-    background-color: var(--grey);
+    /* background-color: var(--grey); */
     /* transform: skewY(-5deg) */
 }
 .serv-img img{
     width: 50%;
+}
+.service-text{
+    /* background-color: var(--new); */
+}
+.service-img{
+    background-color: var(--new);
+}
+.check-img{
+    width: 30px;
 }
 /* Services section */
 
