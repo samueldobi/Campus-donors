@@ -6,12 +6,13 @@
     <title>Campus Donors</title>
     
     <!-- favicon-->
-    <link rel="icon" href="/assets/images/blood-drop.png" />
+    <link rel="icon" href="./assets/images/blood-drop.png" />
 
   <!-- Bootsrap Links -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light  p-3">
@@ -41,7 +42,7 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li><a class="dropdown-item" href="who_can_donate.php">Who can donate</a></li>
-                <li><a class="dropdown-item" href="#">Why donate </a></li>
+                <li><a class="dropdown-item" href="why_donate.php">Why donate </a></li>
               </ul>
             </li>
           </ul>
