@@ -17,7 +17,7 @@
             <h4 class="widget-title mb-4">Get in Touch</h4>
            
             <p class="mb-0">
-              <a class="link-secondary text-decoration-none" href="mailto:demo@yourdomain.com">innovadigitaldesk@gmail.com</a>
+              <a class="link-secondary text-decoration-none" href="mailto:demo@yourdomain.com">innovadigital<br>desk@gmail.com</a>
             </p>
           </div>
         </div>
@@ -26,10 +26,10 @@
             <h4 class="widget-title mb-4">Learn More</h4>
             <ul class="list-unstyled">
               <li class="mb-2">
-                <a href="#!" class="link-secondary text-decoration-none">About</a>
+                <a href="find_donor.php" class="link-secondary text-decoration-none">About</a>
               </li>
               <li class="mb-2">
-                <a href="#!" class="link-secondary text-decoration-none">Contact</a>
+                <a href="contact.php" class="link-secondary text-decoration-none">Contact</a>
               </li>
            
   

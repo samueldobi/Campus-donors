@@ -1,6 +1,6 @@
 <?php include 'includes/header.php'?>
 <section class="register-intro m-3 p-3">
-<div class="container">
+<div class="container register-container">
     <div class="row text-md-center mt-5 mb-5">
         <h2 class="pb-3">Find a Lifesaving Donor Today</h2>
         <p class="register-text">

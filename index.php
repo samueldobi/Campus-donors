@@ -111,9 +111,9 @@
  <section class="why-donate mt-5 mb-5">
     <div class="d-sm-flex ">
         <div class="col-12 col-md-6 why-donate-text   p-4 ">
-            <p class=" fs-3 fw-bold">Why Donate <span style="color:#DA1212">?</span></p>
-            <p class="   ">Donating blood as a student at our university not only saves lives but also fosters a strong sense of community and responsibility. Each donation can help multiple patients in need, showcasing the social good and impactful difference one can make. Join us in this life-saving mission and become a hero to those in urgent need of blood.</p>
-            <p class="learn-more">
+            <p class=" fs-3 fw-bold p-2">Why Donate <span style="color:#DA1212">?</span></p>
+            <p class=" p-2 ">Donating blood as a student at our university not only saves lives but also fosters a strong sense of community and responsibility. Each donation can help multiple patients in need, showcasing the social good and impactful difference one can make. Join us in this life-saving mission and become a hero to those in urgent need of blood.</p>
+            <p class="learn-more p-2">
                 <a href="why-donate.php" class="learn-btn btn text-light">
                     Learn  More
                 </a>
@@ -129,29 +129,29 @@
 <!-- ======= Testimonials  Section ======= -->
 <div class="container mt-5 mb-5 g-2">
     <div class="row g-2 ">
-        <p class="testimonials-header text-lg-center text-sm-start fw-bold fs-2">
+        <p class="testimonials-header text-lg-center text-sm-start fw-bold fs-2 p-3 mt-5">
             Testimonials
         </p>
         <p class="testimonials-text text-lg-center text-sm-start fs-4 ">
-            Here are a couple of students that have benefitted from our programme
+            Here are students that have benefitted from  and contributed to our programme.
         </p>
     </div>
-    <div class="row g-2">
+    <div class="row g-2 mt-3 mb-3">
         <div class="col-md-4">
             <div class="card p-3 text-center px-4">
                 
                 <div class="user-image">
                     
-            <img src="https://i.imgur.com/PKHvlRS.jpg" class="rounded-circle" width="80"
+            <img src="assets/images/naij.jpg" class="rounded-circle" width="80"
                     >
                     
                 </div>
                 
                 <div class="user-content">
                     
-                    <h5 class="mb-0">Bruce Hardy</h5>
-                    <span>Software Developer</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <h5 class="mb-0">Idemudia Benita</h5>
+                    <span>Architecture Student</span>
+                    <p>"As a first-time donor, I was nervous, but the website guided me through every step. The information provided helped me understand the process, and now, I’ve become a regular donor. It’s empowering to be part of something so important."</p>
                     
                 </div>
                 
@@ -172,16 +172,16 @@
                 
                 <div class="user-image">
                     
-            <img src="https://i.imgur.com/w2CKRB9.jpg" class="rounded-circle" width="80"
+            <img src="assets/images/naij2.jpg" class="rounded-circle" width="80"
                     >
                     
                 </div>
                 
                 <div class="user-content">
                     
-                    <h5 class="mb-0">Mark Smith</h5>
-                    <span>Web Developer</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <h5 class="mb-0"> Osagie Aisosa</h5>
+                    <span>Medical Student</span>
+                    <p>"I never realized how easy it was to save a life until I used this website. Signing up to donate was quick, and the reminders made sure I never missed a blood drive. It feels amazing to know that I’ve made a difference in someone’s life."</p>
                     
                 </div>
                 
@@ -204,16 +204,16 @@
                 
                 <div class="user-image">
                     
-            <img src="https://i.imgur.com/ACeArwY.jpg" class="rounded-circle" width="80"
+            <img src="assets/images/naij3.jpg" class="rounded-circle" width="80"
                     >
                     
                 </div>
                 
                 <div class="user-content">
                     
-                    <h5 class="mb-0">Veera  Duncan</h5>
-                    <span>Software Architect</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <h5 class="mb-0">Osayande Johnson</h5>
+                    <span>Engineering Student</span>
+                    <p>"This website made finding a donor for my cousin so much easier. Within minutes, I was connected to someone who could help. I’m incredibly grateful for the support and how smoothly everything went."</p>
                     
                 </div>
                 

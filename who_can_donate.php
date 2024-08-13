@@ -16,7 +16,7 @@
                 <li class="p-1"><span class="fw-bold">Alcohol and Substance Use:</span>Avoid alcohol and certain recreational substances for at least 24 hours before donating to ensure safe blood donation.</li>
                 <li class="p-1"><span class="fw-bold">Pregnancy:</span>Female students who are pregnant or have recently given birth may need to wait before donating blood.</li>
                 <li class="p-1"><span class="fw-bold">Recent Illnesses or Vaccinations:</span>If you’ve had a cold, flu, or certain vaccinations, you might need to wait for a few weeks before donating.</li>
-                <li class="p-1"><span class="fw-bold">Class and Exam Schedules:<span>Consider donating at a time when you can rest afterward, especially around exams or heavy class loads, to ensure your well-being.</li>
+                <li class="p-1"><span class="fw-bold">Class and Exam Schedules:</span>Consider donating at a time when you can rest afterward, especially around exams or heavy class loads, to ensure your well-being.</li>
             </ul>
         </div>
         
