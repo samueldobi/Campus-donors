@@ -4,7 +4,9 @@
     --darkblue: #041562;
     --lightblue: #11468F;
     --grey: #EEEEEE;
-    --new: #FFF1DB;
+    --new: #FBF8D5;
+    --second:#E4EFFB;
+    --third:#DEF7EA;
 }
 /* General Styling */
 html {
@@ -61,22 +63,36 @@ nav{
 /* About Us Section */
 
 /* Services section */
-.services{
-    /* background-color: var(--grey); */
-    /* transform: skewY(-5deg) */
-}
+/* .services{
+     background-color: var(--grey); 
+     transform: skewY(-5deg) 
+} */
 .serv-img img{
     width: 50%;
 }
 .service-text{
-    /* background-color: var(--new); */
+    background-color: var(--new);
+}
+.service-text-two{
+    background-color: var(--second);
+}
+.service-text-three{
+    background-color: var(--second);
 }
 .service-img{
     background-color: var(--new);
+    /* height: ; */
 }
 .check-img{
     width: 30px;
+   
 }
+.my-border{
+    border: 1px solid inherit;
+    border-radius: 25px;
+}
+/* .my-border img{
+} */
 /* Services section */
 
 /* why-donate section */
@@ -87,9 +103,9 @@ nav{
     background-color:var(--red) ;
     border: inherit;
 }
-/* .help-img {
-    width: ;
-} */
+.why-donate{
+    background-color: var(--grey);
+}
 /* why-donate section */
 
 /* Testimonials section */
@@ -111,11 +127,6 @@ nav{
 .footer{
     background-color: var(--grey);
 }
-/* Footer  section */
-/* .dropdown-menu{
-    background-color: red;
-    display: none;
-} */
  /* Media Queries */
  @media screen and (max-width: 480px) {
     .why-donate-text{

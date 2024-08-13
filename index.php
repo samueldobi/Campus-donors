@@ -46,41 +46,11 @@
 
 <!-- ======= Services Section ======= -->
  <section class="services mt-5 mb-5" >
-    <h2 class="fw-bold text-center mt-5 mb-5">Our Services</h2>
+    <h2 class="fw-bold text-center mt-5 ">Our Services</h2>
     <div class="container   p-3">
-        <div class="row d-flex align-items-center justify-content-between p-3 g-2">
-            <!-- <div class="services-text col-lg-6">
-                <p class="fw-bold fs-2">Our Services</p>
-                <p class="fs-5">Here are a list of things we do to help students Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea cum ratione vel magnam? Corporis veniam, aut ut voluptatibus commodi laborum?</p>
-            </div> -->
-            <!-- <div class="services-img  col-lg-6 d-flex justify-content-center">
-                <div>
-                    <div class=" serv-img">
-                        <img src="assets/images/services-one.svg" alt="" class="p-2">
-                        <p class="">Blood Donation</p>
-                    </div>
-                    <div class=" serv-img">
-                        <img src="assets/images/services-two.svg" alt="" class="p-2">
-                        <p class="">Reception</p>
-                    </div>
-
-                </div>
-                <div>
-                    <div class=" serv-img">
-                        <img src="assets/images/services-three.svg" alt="" class="p-2">
-                        <p class="">Updates on blood Status</p>
-                    </div>
-                    <div class=" serv-img">
-                        <img src="assets/images/services-four.svg" alt="" class="p-2">
-                        <p class="">And Others</p>
-                    </div>
-
-                </div>
-
-            </div> -->
-        </div>
+       
         <div class="row justify-content-between mt-5 mb-5 p-3">
-            <div class="col-12 col-md-6 service-text border rounded p-3">
+            <div class="col-12 col-md-7 service-text my-border p-3 gy-5">
                 <h3 class="">Blood Donation</h3>
                 <p class="p-1">Blood donation is at the heart of our services, offering a life-saving resource to those in need within our community and beyond. Here’s why your donation matters:</p>
                
@@ -90,25 +60,46 @@
                    
             </div>
 
-            <div class=" col-12 col-md-4 service-img">
-                <img src="assets/images/new.jpg" alt="" class="img-fluid">
+            <div class=" col-12 col-md-4 service-img my-border gy-5">
+                <div class="row align-items-center p-3 justify-content-center">
+                    <img src="assets/images/new.jpg" alt="" class="img-fluid  my-border">
+                </div>
             </div>
         </div>
 
         <div class="row justify-content-between mt-5 mb-5 p-3">
 
-            <div class=" col-12 col-md-4 service-img">
-                <img src="assets/images/new.jpg" alt="" class="img-fluid">
+            <div class=" col-12 col-md-4 service-img my-border gy-5">
+                <img src="assets/images/new2.jpg" alt="" class="img-fluid my-border">
             </div>
 
-            <div class="col-12 col-md-6 service-text border rounded p-3">
+            <div class="col-12 col-md-7 service-text-two my-border p-3 gy-5">
                 <h3 class="">Blood Testing</h3>
                 <p class="p-1">Blood testing is a vital service we offer, ensuring the safety and health of both donors and recipients. Here’s why it matters:</p>
                
-                    <p class="p-1"><span><img src="assets/images/checkmark.png" class="img-fluid check-img"></span>  Detects any potential infections or conditions. </p>
+                    <p class="p-1"><span><img src="assets/images/checkmark.png" class="img-fluid check-img w-10"></span>  Detects any potential infections or conditions. </p>
                     <p class="p-1"><span><img src="assets/images/checkmark.png" class="img-fluid check-img"></span>  Monitors donor wellness before and after donation.</p>
-                    <p class="p-1"><span><img src="assets/images/checkmark.png" class="img-fluid check-img"></span> Confirms blood type for precise transfusions./p>
+                    <p class="p-1"><span><img src="assets/images/checkmark.png" class="img-fluid check-img"></span> Confirms blood type for precise transfusions.</p>
                    
+            </div>
+
+        </div>
+
+        <div class="row justify-content-between mt-5 mb-5 p-3">
+
+            <div class="col-12 col-md-7 service-text-three my-border p-3 gy-5">
+                <h3 class="">Awareness Campaigns</h3>
+                <p class="p-1">Our awareness campaigns play a crucial role in educating and engaging the university community about the importance of blood donation. Here’s what they achieve:</p>
+               
+                    <p class="p-1"><span><img src="assets/images/checkmark.png" class="img-fluid check-img"></span> Spread knowledge about the need for regular blood donations. </p>
+                    <p class="p-1"><span><img src="assets/images/checkmark.png" class="img-fluid check-img"></span>  Inspire more students to get involved and donate.</p>
+                    <p class="p-1"><span><img src="assets/images/checkmark.png" class="img-fluid check-img"></span> Unite the campus around a life-saving cause.</p>
+                   
+            </div>
+
+            
+            <div class=" col-12 col-md-4 service-img my-border gy-5">
+                <img src="assets/images/new3.jpg" alt="" class="img-fluid my-border">
             </div>
 
         </div>
@@ -118,10 +109,10 @@
 
 <!-- ======= Why Donate  Section ======= -->
  <section class="why-donate mt-5 mb-5">
-    <div class="d-sm-flex">
+    <div class="d-sm-flex ">
         <div class="col-12 col-md-6 why-donate-text   p-4 ">
-            <p class=" fs-3 fw-bold">Why Donate ?</p>
-            <p class=" fs-5  ">Donating blood as a student at our university not only saves lives but also fosters a strong sense of community and responsibility. Each donation can help multiple patients in need, showcasing the social good and impactful difference one can make. Join us in this life-saving mission and become a hero to those in urgent need of blood.</p>
+            <p class=" fs-3 fw-bold">Why Donate <span style="color:#DA1212">?</span></p>
+            <p class="   ">Donating blood as a student at our university not only saves lives but also fosters a strong sense of community and responsibility. Each donation can help multiple patients in need, showcasing the social good and impactful difference one can make. Join us in this life-saving mission and become a hero to those in urgent need of blood.</p>
             <p class="learn-more">
                 <a href="why-donate.php" class="learn-btn btn text-light">
                     Learn  More
