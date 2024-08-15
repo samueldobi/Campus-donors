@@ -79,9 +79,15 @@ nav{
 .service-text-three{
     background-color: var(--second);
 }
-.service-img{
+.img-one{
     background-color: var(--new);
     /* height: ; */
+}
+.img-two{
+    background-color: var(--second);
+}
+.img-three{
+    background-color: var(--second);
 }
 .check-img{
     width: 30px;

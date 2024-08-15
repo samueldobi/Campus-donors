@@ -50,7 +50,7 @@
     <div class="container   p-3">
        
         <div class="row justify-content-between mt-5 mb-5 p-3">
-            <div class="col-12 col-md-7 service-text my-border p-3 gy-5">
+            <div class="col-12 col-md-7 service-text my-border p-4 gy-5">
                 <h3 class="">Blood Donation</h3>
                 <p class="p-1">Blood donation is at the heart of our services, offering a life-saving resource to those in need within our community and beyond. Here’s why your donation matters:</p>
                
@@ -60,8 +60,8 @@
                    
             </div>
 
-            <div class=" col-12 col-md-4 service-img my-border gy-5 align-items-center justify-content-center" >
-                <div class="row  p-3 ">
+            <div class=" col-12 col-md-4 service-img  gy-3 align-items-center justify-content-center" >
+                <div class="row  p-3  img-one my-border">
                     <img src="assets/images/new.jpg" alt="" class="img-fluid  my-border mt-4">
                 </div>
             </div>
@@ -69,11 +69,14 @@
 
         <div class="row justify-content-between mt-5 mb-5 p-3">
 
-            <div class=" col-12 col-md-4 service-img my-border gy-5  align-items-center justify-content-center">
-                <img src="assets/images/new2.jpg" alt="" class="img-fluid my-border  mt-4">
+            <div class=" col-12 col-md-4 service-img  gy-3 align-items-center justify-content-center">
+            <div class="row  p-3  img-two my-border">
+            <img src="assets/images/new2.jpg" alt="" class="img-fluid my-border  mt-4">
+            </div>
+               
             </div>
 
-            <div class="col-12 col-md-7 service-text-two my-border p-3 gy-5">
+            <div class="col-12 col-md-7 service-text-two my-border p-3 gy-3">
                 <h3 class="">Blood Testing</h3>
                 <p class="p-1">Blood testing is a vital service we offer, ensuring the safety and health of both donors and recipients. Here’s why it matters:</p>
                
@@ -97,9 +100,11 @@
                    
             </div>
 
-            
-            <div class=" col-12 col-md-4 service-img my-border gy-5  align-items-center justify-content-center">
+            <div class=" col-12 col-md-4 service-img  gy-3  align-items-center justify-content-center">
+                <div class="row  p-3  img-two my-border">
                 <img src="assets/images/new3.jpg" alt="" class="img-fluid my-border  mt-4">
+                </div>
+              
             </div>
 
         </div>
