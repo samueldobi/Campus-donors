@@ -47,9 +47,9 @@
               </ul>
             </li>
           </ul>
-          <ul class="navbar-nav ms-auto d-none d-lg-inline-flex">
+          <ul class="navbar-nav ms-auto   ">
             <li class="nav-item mx-2">
-            <a class="nav-link mx-2" href="#">Login/Register</a>
+            <a class="nav-link " href="#">Login/Register</a>
               <!-- <a class="nav-link text-dark h5" href="" target="blank"><i class="fab fa-google-plus-square"></i></a> -->
             </li>
             <li class="nav-item mx-2">

@@ -1,17 +1,17 @@
 <?php include 'includes/header.php' ?>
   <!-- ======= Hero  Section ======= -->
-<section class="hero-section  d-flex align-items-center mb-5">
+<section class="hero-section  d-flex align-items-md-center mb-5">
     <div class="container">
-        <div class="row">
+        <div class="row hero-responsive">
             <div class="col-lg-12 d-flex flex-column text-light text-center ">
                 <p class = "fs-1 fw-bold text-center ">Welcome to Campus Donors</p>
                 <p class="fs-3">A university platform for saving lives. Join the University <br>of Benin community in donating blood and making a difference.</p>
 
                 <div class="button-links">
-                    <a href="donate.php" style="text-decoration: none;">
+                    <a href="donate.php">
                     <button type="button" class="btn text-light  btn-style">Donate </button>
                     </a>
-                    <a  href = "#about" style="text-decoration: none;">
+                    <a  href = "#about">
                         <button type="button" class="btn text-light btn-style">Learn More </button>
                     </a>
 
@@ -129,10 +129,10 @@
 <!-- ======= Testimonials  Section ======= -->
 <div class="container mt-5 mb-5 g-2">
     <div class="row g-2 ">
-        <p class="testimonials-header text-lg-center text-sm-start fw-bold fs-2 p-3 mt-5">
+        <p class="testimonials-header text-lg-center text-sm-start fw-bold fs-2 p-2 mt-5">
             Testimonials
         </p>
-        <p class="testimonials-text text-lg-center text-sm-start fs-4 ">
+        <p class="testimonials-text text-lg-center text-sm-start fs-4  m-1">
             Here are students that have benefitted from  and contributed to our programme.
         </p>
     </div>

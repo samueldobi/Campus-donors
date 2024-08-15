@@ -132,6 +132,14 @@ nav{
     .why-donate-text{
         transform: translateY(1%);
     }
+    .hero-section{
+        width: 100%;
+        height: 50vh;    
+        display:none;   
+    }
+    .hero-responsive{
+        margin-top: 40px;
+    }
   }
   
  /* Media Queries */
