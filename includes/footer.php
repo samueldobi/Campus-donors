@@ -1,7 +1,7 @@
-<!-- Footer 2 - Bootstrap Brain Component -->
+<!-- Footer  -->
 <footer class="footer">
 
-  <!-- Widgets - Bootstrap Brain Component -->
+  <!-- Widgets -  -->
   <section class=" py-4 py-md-5 py-xl-8 border-top border-light">
     <div class="container overflow-hidden">
       <div class="row gy-4 gy-lg-0 justify-content-xl-between">

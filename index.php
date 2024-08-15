@@ -60,17 +60,17 @@
                    
             </div>
 
-            <div class=" col-12 col-md-4 service-img my-border gy-5">
-                <div class="row align-items-center p-3 justify-content-center">
-                    <img src="assets/images/new.jpg" alt="" class="img-fluid  my-border">
+            <div class=" col-12 col-md-4 service-img my-border gy-5 align-items-center justify-content-center" >
+                <div class="row  p-3 ">
+                    <img src="assets/images/new.jpg" alt="" class="img-fluid  my-border mt-4">
                 </div>
             </div>
         </div>
 
         <div class="row justify-content-between mt-5 mb-5 p-3">
 
-            <div class=" col-12 col-md-4 service-img my-border gy-5">
-                <img src="assets/images/new2.jpg" alt="" class="img-fluid my-border">
+            <div class=" col-12 col-md-4 service-img my-border gy-5  align-items-center justify-content-center">
+                <img src="assets/images/new2.jpg" alt="" class="img-fluid my-border  mt-4">
             </div>
 
             <div class="col-12 col-md-7 service-text-two my-border p-3 gy-5">
@@ -98,8 +98,8 @@
             </div>
 
             
-            <div class=" col-12 col-md-4 service-img my-border gy-5">
-                <img src="assets/images/new3.jpg" alt="" class="img-fluid my-border">
+            <div class=" col-12 col-md-4 service-img my-border gy-5  align-items-center justify-content-center">
+                <img src="assets/images/new3.jpg" alt="" class="img-fluid my-border  mt-4">
             </div>
 
         </div>

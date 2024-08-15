@@ -2,8 +2,8 @@
 <section class="why-donate mt-5 mb-5">
 
         <h2 class="fw-bold text-center">Why Should You Donate <span style="color:#DA1212">?</span></h2>
-        <div class="d-md-flex justify-content-evenly mt-5 mb-5">
-            <div class="col-10 col-md-3 rounded border m-2 p-3 why-box">
+        <div class="d-md-flex  justify-content-evenly  mt-5 mb-5">
+            <div class="col-10 col-md-3 rounded border  m-2 p-3  why-box mb-5">
                 <img src="./assets/images/lives.png" class="img-fluid m-1 p-2" >
                 <h3 class="fw-bold m-1 p-2">
                     Saving Lives
@@ -12,7 +12,7 @@
                 The blood collected through donations is often used in life-saving situations, such as surgeries, trauma cases, and for patients with chronic illnesses.
                 </p>
             </div>
-            <div class="col-10 col-md-3 rounded border m-2 p-3 why-box">
+            <div class="col-10 col-md-3 rounded border m-2 p-3 why-box mb-5">
                 <img src="./assets/images/community.png" class="img-fluid m-1 p-2" >
                 <h3 class="fw-bold m-1 p-2">
                 Community Health
@@ -21,7 +21,7 @@
                 Blood donation drives on campus help ensure a steady supply of safe and healthy blood for local hospitals
                 </p>
             </div>
-            <div class="col-10 col-md-3 rounded border m-2 p-3 why-box">
+            <div class="col-10 col-md-3 rounded border m-2 p-3 why-box mb-5">
                 <img src="./assets/images/education.png" class="img-fluid m-1 p-2" >
                 <h3 class="fw-bold m-1 p-2">
                     Educational Impact
