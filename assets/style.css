@@ -9,15 +9,23 @@
     --third:#DEF7EA;
 }
 /* General Styling */
+*{
+    overflow-x: hidden;
+}
 html {
     scroll-behavior: smooth;
   }
 body{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
+    margin: 0;
+    padding: 0;
     font-style: normal;
     overflow-x: hidden;
-
+    box-sizing: border-box; 
+}
+section{
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;
@@ -42,6 +50,7 @@ nav{
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-x: hidden;
 }
 /* Navbar Styling */
 
@@ -151,5 +160,3 @@ nav{
  .form-div{
     border: 1px solid #000;
  }
-
-

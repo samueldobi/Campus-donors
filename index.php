@@ -1,6 +1,6 @@
 <?php include 'includes/header.php' ?>
   <!-- ======= Hero  Section ======= -->
-<section class="hero-section  d-flex align-items-md-center mb-5">
+<section class="hero-section  d-flex align-items-md-center mb-5  p-2" style="overflow-x: hidden;">
     <div class="container">
         <div class="row hero-responsive">
             <div class="col-lg-12 d-flex flex-column text-light text-center ">
