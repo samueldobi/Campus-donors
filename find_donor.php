@@ -13,19 +13,19 @@
         <h3 class=" text-md-center p-2 mt-2 mb-3">Register Your Details</h3>
         <div class="border rounded  col-10 col-md-6 align-items-center justify-content-center">
 
-            <form class="">
+            <form  action = "form_actions.php"  class="" method="POST">
 
             <!-- Name Label -->
                 <div class="m-3">
                     <label for="name" class="form-label fw-bold">Name</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="name">
                 </div>
             <!-- Name Label -->
 
             <!-- Email Input -->
             <div class="m-3">
                 <label for="exampleInputEmail1" class="form-label fw-bold">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
                 <div id="emailHelp" class="form-text">Your Email is safe</div>
             </div>
             <!-- Email Input -->
@@ -35,8 +35,8 @@
                     <label for="" class="fw-bold">Blood Type:</label>
                     <div class="form-floating">
 
-                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                            <option selected> Blood Type</option>
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name = "bloodtype">
+                            <option value=""> Blood Type</option>
                             <option value="A+">A+</option>
                             <option value="A-">A-</option>
                             <option value="B+">B+</option>
@@ -55,8 +55,8 @@
                     <label for="" class="fw-bold">Faculty</label>
                     <div class="form-floating">
 
-                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                            <option selected> Faculty</option>
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name="facultyinit">
+                            <option value=""> Faculty</option>
                             <option value="Arts">Arts </option>
                             <option value="Agric">Agriculture</option>
                             <option value="Bms">Basic Medical Sciences</option>
