@@ -16,6 +16,19 @@
     }
 </style>
 <?php 
+//Import PHPMailer classes into the global namespace
+//These must be at the top of your script, not inside a function
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+//Load Composer's autoloader
+require 'vendor/autoload.php';
+
+//Create an instance; passing `true` enables exceptions
+$mail = new PHPMailer(true);
+
+
 // DATABASE INITIALIZATION
  $host = 'localhost';
  $user = 'iyke';
@@ -39,7 +52,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['name'];
     $email = $_POST['email'];
     $bloodtype = $_POST['bloodtype'];
-    $faculty = $_POST['faculty'];
+    $faculty = $_POST['faculty']?? '';// the null coalescing operator ?? provides a default value if the key does not exist:
+    
+    // PHP MAILER CODE
+        //Server settings
+        $mail->isSMTP();                                            //Send using SMTP
+        $mail->Host       = '';                     //Set the SMTP server to send through
+        $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+        $mail->Username   = '';                     //SMTP username
+        $mail->Password   = '';                               //SMTP password
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+        $mail->Port       = 00000000;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+    
+        //Recipients
+        $mail->setFrom('', 'Admin');
+        $mail->addAddress('');     //Add a recipient
+        $mail->addAddress('', 'Admin');     //Add a recipient
+
+        $mail->isHTML(true);                                  //Set email format to HTML
+        $mail->Subject = 'New submission at Campus Donors';
+        $mail->Body    = 'A new form has been submitted at Campus Donors</b>';
+    
+        $mail->send();
+     
+
+        
 
     // Sanitize the data (important for security)
     $name = htmlspecialchars($name);
@@ -82,6 +119,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Example: Insert data into the database or send an email
     // (Code for database insertion or email sending would go here)
+
+    // PHP MAILER
 
 ?>
 
