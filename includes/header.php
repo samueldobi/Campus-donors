@@ -53,60 +53,99 @@
             <!-- Modal Button -->
                   <!-- Button trigger modal -->
                   <!-- <button type="button" class=" login-reg" data-bs-target="#exampleModal"> -->
-                  <a class="nav-link login-btn " href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Login/Signup</a>
+                  <!-- <a class="nav-link login-btn " href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</a> -->
                   <!-- </button> -->
 
                   <!-- Modal -->
-                   <form action="login.php" method="POST">
-                   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
+               
+
+                   <!--Double  Modal Test -->
+                 <!-- First Modal (Login) -->
+                  <div class="modal fade" id="loginModal" aria-hidden="true" aria-labelledby="loginModalLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <h5 class="modal-title text-center" id="exampleModalLabel">Login/Signup</h5>
+                          <h5 class="modal-title text-center fw-bold" id="loginModalLabel">Login</h5>
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                        <form  action = "form_actions.php"  class="" method="POST">
-                          <!-- Name Input -->
-                        <div class="m-3">
-                            <label for="name" class="form-label fw-bold">Username</label>
-                            <input type="name" class="form-control" id="nameInput" aria-describedby="emailHelp" name="username">
-                        </div>
-                       <!-- Name Input -->
-                        <!-- Email Input -->
-                        <div class="m-3">
-                            <label for="exampleInputEmail1" class="form-label fw-bold">Email address</label>
-                            <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" name="email" placeholder="Your Email  Address is safe">
-                            <!-- <div id="emailHelp" class="form-text"></div> -->
-                        </div>
-                        <!-- Email Input -->
-                         <!-- Password Input -->
-                        <div class="m-3">
-                            <label for="Password" class="form-label fw-bold">Password</label>
-                            <input type="name" class="form-control" id="passwordInput" aria-describedby="emailHelp" placeholder="Must contain numbers and letters " name="password" >
-                            <!-- <span><i class="fa-solid fa-eye-slash" id="eye-slash"></i></span> -->
-                        </div>
-                       <!-- Password Input -->
-                        </form> 
-                        </div>
-                        <div class="modal-footer">
-                          <!-- <input type="button" class="btn text-light mx-auto btn-style text-center modal-btn" data-bs-dismiss="modal" id="login-button">Register</button> -->
-                          <input type="submit" name="register" value="Register">
-                          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                          <form action="login.php" method="POST">
+                            <!-- Username Input -->
+                            <div class="m-3">
+                              <label for="loginUsername" class="form-label fw-bold">Username</label>
+                              <input type="text" class="form-control" id="loginUsername" name="username">
+                            </div>
+                            <!-- Email Input -->
+                            <!-- <div class="m-3">
+                              <label for="loginEmail" class="form-label fw-bold">Email address</label>
+                              <input type="email" class="form-control" id="loginEmail" name="email" placeholder="Your Email Address is safe">
+                            </div> -->
+                            <!-- Password Input -->
+                            <div class="m-3">
+                              <label for="loginPassword" class="form-label fw-bold">Password</label>
+                              <input type="password" class="form-control" id="loginPassword" placeholder="Must contain numbers and letters" name="password">
+                            </div>
+                            <div class="modal-footer d-flex flex-column">
+                              <input type="submit" name="login" value="Login" class="btn text-light mx-auto btn-style text-center modal-btn">
+                              <div class="p-2 text-center">Don't have an account? 
+                                <span style="color:#DA1212" data-bs-target="#registerModal" data-bs-toggle="modal" data-bs-dismiss="modal">Signup</span>
+                              </div>
+                            </div>
+                          </form>
                         </div>
                       </div>
                     </div>
                   </div>
-                   </form>
+
+<!-- Second Modal (Register) -->
+              <div class="modal fade" id="registerModal" aria-hidden="true" aria-labelledby="registerModalLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title text-center fw-bold" id="registerModalLabel">Register</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form action="register.php" method="POST">
+                        <!-- Username Input -->
+                        <div class="m-3">
+                          <label for="registerUsername" class="form-label fw-bold">Username</label>
+                          <input type="text" class="form-control" id="registerUsername" name="username">
+                        </div>
+                        <!-- Email Input -->
+                        <div class="m-3">
+                          <label for="registerEmail" class="form-label fw-bold">Email address</label>
+                          <input type="email" class="form-control" id="registerEmail" name="email" placeholder="Your Email Address is safe">
+                        </div>
+                        <!-- Password Input -->
+                        <div class="m-3">
+                          <label for="registerPassword" class="form-label fw-bold">Password</label>
+                          <input type="password" class="form-control" id="registerPassword" placeholder="Must contain numbers and letters" name="password">
+                        </div>
+                        <div class="modal-footer d-flex flex-column">
+                          <input type="submit" name="register" value="Register" class="btn text-light mx-auto btn-style text-center modal-btn">
+                          <div class="p-2 text-center">Already have an account? 
+                            <span style="color:#DA1212" data-bs-target="#loginModal" data-bs-toggle="modal" data-bs-dismiss="modal">Login</span>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+<!-- Button to open the first modal -->
+<a class="text-light" data-bs-toggle="modal" href="#loginModal" role="button"> Login </a>
+                   <!--Double  Modal Test -->
                
             <!-- Modal Button -->
-            </li>
+            <!-- </li>
             <li class="nav-item mx-2">
               <a class="nav-link text-dark h5" href="" target="blank"><i class="fab fa-twitter"></i></a>
             </li>
             <li class="nav-item mx-2">
               <a class="nav-link text-dark h5" href="" target="blank"><i class="fab fa-facebook-square"></i></a>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>

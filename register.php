@@ -1,29 +1,23 @@
 <?php
+require_once 'config.php';
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
     $email = $_POST['email'];
-    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+    $password = $_POST['password'];
     
-    // Connect to database
-    $conn = new mysqli("localhost", "username", "password", "database");
-    
-    // Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
+    try {
+        $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+        $stmt = $pdo->prepare("INSERT INTO users (username, email, password) VALUES (:username, :email, :password)");
+        $stmt->execute([
+            ':username' => $username,
+            ':email' => $email,
+            ':password' => $hashedPassword
+        ]);
+        $_SESSION['message'] = "Registration successful. Please log in.";
+        redirectTo('index.php');
+    } catch(PDOException $e) {
+        $error = "Registration failed: " . $e->getMessage();
     }
-    
-    // Insert user data
-    $sql = "INSERT INTO users (username, email, password) VALUES (?, ?, ?)";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("sss", $username, $email, $password);
-    
-    if ($stmt->execute()) {
-        echo "Registration successful";
-    } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
-    }
-    
-    $stmt->close();
-    $conn->close();
 }
 ?>
