@@ -55,7 +55,7 @@
                     <label for="" class="fw-bold">Faculty</label>
                     <div class="form-floating">
 
-                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name="facultyinit">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name="faculty">
                             <option value=""> Faculty</option>
                             <option value="Arts">Arts </option>
                             <option value="Agric">Agriculture</option>

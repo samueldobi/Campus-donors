@@ -49,8 +49,53 @@
           </ul>
           <ul class="navbar-nav ms-auto   ">
             <li class="nav-item mx-2">
-            <a class="nav-link " href="#">Login/Register</a>
-              <!-- <a class="nav-link text-dark h5" href="" target="blank"><i class="fab fa-google-plus-square"></i></a> -->
+          
+            <!-- Modal Button -->
+                  <!-- Button trigger modal -->
+                  <!-- <button type="button" class=" login-reg" data-bs-target="#exampleModal"> -->
+                  <a class="nav-link login-btn " href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Login/Signup</a>
+                  <!-- </button> -->
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title text-center" id="exampleModalLabel">Login/Signup</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        <form  action = "form_actions.php"  class="" method="POST">
+                          <!-- Name Input -->
+                        <div class="m-3">
+                            <label for="name" class="form-label fw-bold">Name</label>
+                            <input type="name" class="form-control" id="nameInput" aria-describedby="emailHelp" name="name">
+                        </div>
+                       <!-- Name Input -->
+                        <!-- Email Input -->
+                        <div class="m-3">
+                            <label for="exampleInputEmail1" class="form-label fw-bold">Email address</label>
+                            <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" name="email" placeholder="Your Email  Address is safe">
+                            <!-- <div id="emailHelp" class="form-text"></div> -->
+                        </div>
+                        <!-- Email Input -->
+                         <!-- Password Input -->
+                        <div class="m-3">
+                            <label for="Password" class="form-label fw-bold">Password</label>
+                            <input type="name" class="form-control" id="passwordInput" aria-describedby="emailHelp" placeholder="Must contain numbers and letters " name="Password" >
+                            <span><i class="fa-solid fa-eye-slash" id="eye-slash"></i></span>
+                        </div>
+                       <!-- Password Input -->
+                        </form> 
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn text-light mx-auto btn-style text-center modal-btn" data-bs-dismiss="modal" id="login-button">Login</button>
+                          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            <!-- Modal Button -->
             </li>
             <li class="nav-item mx-2">
               <a class="nav-link text-dark h5" href="" target="blank"><i class="fab fa-twitter"></i></a>

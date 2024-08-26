@@ -23,6 +23,13 @@ body{
 a{
     text-decoration: none;
 }
+.login-btn{
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    /* color: #fff; */
+}
 /* General Styling */
 /* Navbar Styling */
 nav{
@@ -47,6 +54,10 @@ nav{
     /* width: 50%; */
 }
 .button-links .btn-style{
+    background-color:var(--red) ;
+}
+.modal-btn{
+    width: 100%;
     background-color:var(--red) ;
 }
 /* Hero Section */
