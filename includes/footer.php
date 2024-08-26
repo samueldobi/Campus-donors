@@ -7,12 +7,12 @@
       <div class="row gy-4 gy-lg-0 justify-content-xl-between">
         <div class="col-12 col-md-4 col-lg-3 col-xl-2">
           <div class="widget">
-            <a href="#!">
+            <!-- <a href="#!">
               <img src="./assets/images/logo.png" alt="" width="175" height="157">
-            </a>
+            </a> -->
           </div>
         </div>
-        <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+        <div class="col-12 col-md-4 col-lg-4 col-xl-2">
           <div class="widget">
             <h4 class="widget-title mb-4">Get in Touch</h4>
            
@@ -21,7 +21,7 @@
             </p>
           </div>
         </div>
-        <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+        <div class="col-12 col-md-4 col-lg-4 col-xl-2">
           <div class="widget">
             <h4 class="widget-title mb-4">Learn More</h4>
             <ul class="list-unstyled">
@@ -36,7 +36,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-12 col-lg-3 col-xl-4">
+        <div class="col-12 col-lg-4 col-xl-4">
           <div class="widget">
             <h4 class="widget-title mb-4">Our Newsletter</h4>
             <p class="mb-4">Subscribe to our newsletter to get updates about our programme.</p>
