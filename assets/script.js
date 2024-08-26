@@ -47,26 +47,26 @@ emailInput.addEventListener('submit', function(event) {
     console.log('it is changing')
 });
 
-loginButton.addEventListener('click', ()=>{
-    console.log('hello')
+// loginButton.addEventListener('click', ()=>{
+//     console.log('hello')
 
-});
+// });
 //  Password validator function
 // function validatePassword(){
 
 // }
-passwordInput.addEventListener('input', ()=>{
-    const checkPassword = passwordInput.value
-    const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/
-    const regexTestPass = passwordRegex.test(checkPassword)
-    if(regexTestPass == false ){
-        // errorPass.style.display = "block";
-        console.log('wrong')
-      }
-      else{
-        // errorPass.style.display = "none";
-        console.log('right')
-      }
+// passwordInput.addEventListener('input', ()=>{
+//     const checkPassword = passwordInput.value
+//     const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/
+//     const regexTestPass = passwordRegex.test(checkPassword)
+//     if(regexTestPass == false ){
+//         // errorPass.style.display = "block";
+//         console.log('wrong')
+//       }
+//       else{
+//         // errorPass.style.display = "none";
+//         console.log('right')
+//       }
     
-      console.log(regexTestPass)
-})
+//       console.log(regexTestPass)
+// })

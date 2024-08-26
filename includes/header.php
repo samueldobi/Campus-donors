@@ -57,7 +57,8 @@
                   <!-- </button> -->
 
                   <!-- Modal -->
-                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                   <form action="login.php" method="POST">
+                   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                       <div class="modal-content">
                         <div class="modal-header">
@@ -68,8 +69,8 @@
                         <form  action = "form_actions.php"  class="" method="POST">
                           <!-- Name Input -->
                         <div class="m-3">
-                            <label for="name" class="form-label fw-bold">Name</label>
-                            <input type="name" class="form-control" id="nameInput" aria-describedby="emailHelp" name="name">
+                            <label for="name" class="form-label fw-bold">Username</label>
+                            <input type="name" class="form-control" id="nameInput" aria-describedby="emailHelp" name="username">
                         </div>
                        <!-- Name Input -->
                         <!-- Email Input -->
@@ -82,19 +83,22 @@
                          <!-- Password Input -->
                         <div class="m-3">
                             <label for="Password" class="form-label fw-bold">Password</label>
-                            <input type="name" class="form-control" id="passwordInput" aria-describedby="emailHelp" placeholder="Must contain numbers and letters " name="Password" >
-                            <span><i class="fa-solid fa-eye-slash" id="eye-slash"></i></span>
+                            <input type="name" class="form-control" id="passwordInput" aria-describedby="emailHelp" placeholder="Must contain numbers and letters " name="password" >
+                            <!-- <span><i class="fa-solid fa-eye-slash" id="eye-slash"></i></span> -->
                         </div>
                        <!-- Password Input -->
                         </form> 
                         </div>
                         <div class="modal-footer">
-                          <button type="button" class="btn text-light mx-auto btn-style text-center modal-btn" data-bs-dismiss="modal" id="login-button">Login</button>
+                          <!-- <input type="button" class="btn text-light mx-auto btn-style text-center modal-btn" data-bs-dismiss="modal" id="login-button">Register</button> -->
+                          <input type="submit" name="register" value="Register">
                           <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                         </div>
                       </div>
                     </div>
                   </div>
+                   </form>
+               
             <!-- Modal Button -->
             </li>
             <li class="nav-item mx-2">

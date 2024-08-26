@@ -54,6 +54,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $bloodtype = $_POST['bloodtype'];
     $faculty = $_POST['faculty']?? '';// the null coalescing operator ?? provides a default value if the key does not exist:
     
+
+
     // PHP MAILER CODE
         //Server settings
         $mail->isSMTP();                                            //Send using SMTP
@@ -74,7 +76,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Body    = 'A new form has been submitted at Campus Donors</b>';
     
         $mail->send();
-     
+         // PHP MAILER CODE END
 
         
 
@@ -112,15 +114,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo "Please select your blood type.";
     }
+
+    // For login function
 }
-
-    // You can now use this data, e.g., store it in a database or send it via email
-    // echo "Thank you, $name! We have received your message: \"$message\". We will contact you shortly at $email.";
-
-    // Example: Insert data into the database or send an email
-    // (Code for database insertion or email sending would go here)
-
-    // PHP MAILER
 
 ?>
 
