@@ -114,18 +114,21 @@
 
 <!-- ======= Why Donate  Section ======= -->
  <section class="why-donate mt-5 mb-5">
-    <div class="d-sm-flex ">
-        <div class="col-12 col-md-6 why-donate-text   p-4 ">
-            <p class=" fs-3 fw-bold p-2">Why Donate <span style="color:#DA1212">?</span></p>
-            <p class=" p-2 ">Donating blood as a student at our university not only saves lives but also fosters a strong sense of community and responsibility. Each donation can help multiple patients in need, showcasing the social good and impactful difference one can make. Join us in this life-saving mission and become a hero to those in urgent need of blood.</p>
-            <p class="learn-more p-2">
-                <a href="why-donate.php" class="learn-btn btn text-light">
-                    Learn  More
-                </a>
-            </p>
-        </div>
-        <div class="help-img">
-            <img src="assets/images/help-img.webp" class="img-fluid">
+    <div class="container">
+
+        <div class="d-sm-flex ">
+            <div class="col-12 col-md-6 why-donate-text   p-4 ">
+                <p class=" fs-3 fw-bold p-2">Why Donate <span style="color:#DA1212">?</span></p>
+                <p class=" p-2 ">Donating blood as a student at our university not only saves lives but also fosters a strong sense of community and responsibility. Each donation can help multiple patients in need, showcasing the social good and impactful difference one can make. Join us in this life-saving mission and become a hero to those in urgent need of blood.</p>
+                <p class="learn-more p-2">
+                    <a href="why-donate.php" class="learn-btn btn text-light">
+                        Learn  More
+                    </a>
+                </p>
+            </div>
+            <div class="help-img">
+                <img src="assets/images/help-img.webp" class="img-fluid">
+            </div>
         </div>
     </div>
  </section>

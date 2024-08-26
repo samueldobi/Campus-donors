@@ -66,6 +66,16 @@
                       <div class="modal-content">
                         <div class="modal-header">
                           <h5 class="modal-title text-center fw-bold" id="loginModalLabel">Login</h5>
+                          <?php 
+                              if (isset($_SESSION['message'])) {
+                                  echo "<p>{$_SESSION['message']}</p>";
+                                  unset($_SESSION['message']);
+                              }
+                              if (isset($error)) {
+                                  error_log("Displaying error to user: " . $error);
+                                  echo "<p>$error</p>"; 
+                              }
+                              ?>
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">

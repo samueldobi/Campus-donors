@@ -9,6 +9,9 @@
     --third:#DEF7EA;
 }
 /* General Styling */
+/* *{
+ border: 1px solid red;
+} */
 html {
     scroll-behavior: smooth;
   }
