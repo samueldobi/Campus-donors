@@ -148,14 +148,24 @@
 <a class="text-light" data-bs-toggle="modal" href="#loginModal" role="button"> Login </a>
                    <!--Double  Modal Test -->
                
-            <!-- Modal Button -->
-            <!-- </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link text-dark h5" href="" target="blank"><i class="fab fa-twitter"></i></a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link text-dark h5" href="" target="blank"><i class="fab fa-facebook-square"></i></a>
-            </li> -->
+            <!-- PHP TEST FOR PROFILE PICTURE AFTER LOGIN -->
+            <?php if (isset($_SESSION['user_id'])): ?>
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="<?php echo htmlspecialchars($_SESSION['profile_picture']); ?>" alt="Profile" class="rounded-circle" width="30" height="30">
+                        Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="dashboard.php">Dashboard</a></li>
+                        <li><a class="dropdown-item" href="change_profile_picture.php">Change Profile Picture</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+                    </ul>
+                </div>
+            <?php else: ?>
+                <a class="nav-link" href="login.php">Login</a>
+            <?php endif; ?>
+            <!-- PHP TEST FOR PROFILE PICTURE AFTER LOGIN -->
           </ul>
         </div>
       </div>

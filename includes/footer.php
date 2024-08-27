@@ -5,7 +5,7 @@
   <section class=" py-4 py-md-5 py-xl-8 border-top border-light">
     <div class="container overflow-hidden">
       <div class="row gy-4 gy-lg-0 justify-content-xl-between">
-        <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+        <div class="col-12 col-md-4 col-lg-4 col-xl-2">
           <div class="widget">
             <!-- <a href="#!">
               <img src="./assets/images/logo.png" alt="" width="175" height="157">
