@@ -24,7 +24,7 @@ session_start();
             <?php if (isset($_SESSION['user_id'])): ?>
                 <div class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="<?php echo htmlspecialchars($_SESSION['profile_picture']); ?>" alt="Profile" class="rounded-circle" width="30" height="30">
+                        <img src="<?php echo htmlspecialchars($_SESSION['profile_picture']); ?>" alt="" class="rounded-circle" width="30" height="30">
                         Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">

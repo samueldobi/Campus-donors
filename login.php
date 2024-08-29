@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login'])) {
     error_log("Login attempt for username: " . $username);
    
     try {
-        $stmt = $pdo->prepare("SELECT id, username, password FROM users WHERE username = :username");
+        $stmt = $pdo->prepare("SELECT id, username, password, profile_picture FROM users WHERE username = :username");
         $stmt->execute([':username' => $username]);
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
        
@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login'])) {
                 error_log("Password verified successfully");
                 $_SESSION['user_id'] = $user['id'];
                 $_SESSION['username'] = $user['username'];
-                $_SESSION['profile_picture'] = $user['profile_picture'];
+                $_SESSION['profile_picture'] = $user['profile_picture'] ?? './assets/images/defaultpic.png';
                 error_log("Session variables set");
                 error_log("Redirecting to dashboard.php");
                 header("Location: dashboard.php");
