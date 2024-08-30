@@ -1,0 +1,48 @@
+[30-Aug-2024 17:22:19 Europe/Berlin] Login process started
+[30-Aug-2024 17:22:19 Europe/Berlin] Login process completed without redirect
+[30-Aug-2024 17:22:19 Europe/Berlin] Login attempt for username: ik
+[30-Aug-2024 17:22:19 Europe/Berlin] User found in database
+[30-Aug-2024 17:22:19 Europe/Berlin] Stored hashed password: $2y$10$PpbWHKVtyrkQ0gmyDIBgKOhSStjDgWFep8pHeu2bVDjzS2YiGLvxG
+[30-Aug-2024 17:22:19 Europe/Berlin] Provided password: ik
+[30-Aug-2024 17:22:20 Europe/Berlin] Password verified successfully
+[30-Aug-2024 17:22:20 Europe/Berlin] Session variables set
+[30-Aug-2024 17:22:20 Europe/Berlin] Redirecting to dashboard.php
+[30-Aug-2024 17:31:50 Europe/Berlin] Registration process started
+[30-Aug-2024 17:31:50 Europe/Berlin] Registration process completed without redirect
+[30-Aug-2024 17:31:50 Europe/Berlin] Registration attempt for username: rema
+[30-Aug-2024 17:31:51 Europe/Berlin] Registering user: rema
+[30-Aug-2024 17:31:51 Europe/Berlin] Hashed password: $2y$10$p8xBdagKpfDgpCJSnRash.k0WCg3Hfygfoo6i/RMMHqGgPH51BZnm
+[30-Aug-2024 17:31:51 Europe/Berlin] Registraion is succesful
+[30-Aug-2024 17:32:00 Europe/Berlin] Login process started
+[30-Aug-2024 17:32:00 Europe/Berlin] Login process completed without redirect
+[30-Aug-2024 17:32:00 Europe/Berlin] Login attempt for username: rema
+[30-Aug-2024 17:32:00 Europe/Berlin] User found in database
+[30-Aug-2024 17:32:00 Europe/Berlin] Stored hashed password: $2y$10$p8xBdagKpfDgpCJSnRash.k0WCg3Hfygfoo6i/RMMHqGgPH51BZnm
+[30-Aug-2024 17:32:00 Europe/Berlin] Provided password: rema
+[30-Aug-2024 17:32:01 Europe/Berlin] Password verified successfully
+[30-Aug-2024 17:32:01 Europe/Berlin] Session variables set
+[30-Aug-2024 17:32:01 Europe/Berlin] Redirecting to dashboard.php
+[30-Aug-2024 17:33:49 Europe/Berlin] Login process started
+[30-Aug-2024 17:33:49 Europe/Berlin] Login process completed without redirect
+[30-Aug-2024 17:33:49 Europe/Berlin] Login attempt for username: ik
+[30-Aug-2024 17:33:49 Europe/Berlin] User found in database
+[30-Aug-2024 17:33:49 Europe/Berlin] Stored hashed password: $2y$10$PpbWHKVtyrkQ0gmyDIBgKOhSStjDgWFep8pHeu2bVDjzS2YiGLvxG
+[30-Aug-2024 17:33:49 Europe/Berlin] Provided password: ik
+[30-Aug-2024 17:33:50 Europe/Berlin] Password verified successfully
+[30-Aug-2024 17:33:50 Europe/Berlin] Session variables set
+[30-Aug-2024 17:33:50 Europe/Berlin] Redirecting to dashboard.php
+[30-Aug-2024 17:34:25 Europe/Berlin] Registration process started
+[30-Aug-2024 17:34:25 Europe/Berlin] Registration process completed without redirect
+[30-Aug-2024 17:34:25 Europe/Berlin] Registration attempt for username: nne
+[30-Aug-2024 17:34:25 Europe/Berlin] Registering user: nne
+[30-Aug-2024 17:34:25 Europe/Berlin] Hashed password: $2y$10$WbkR4bA2sUMeWxV9Wa.zr.ZHv2dKW9zkcF8xpllwqXbWK75EUtnEC
+[30-Aug-2024 17:34:25 Europe/Berlin] Registraion is succesful
+[30-Aug-2024 17:34:35 Europe/Berlin] Login process started
+[30-Aug-2024 17:34:35 Europe/Berlin] Login process completed without redirect
+[30-Aug-2024 17:34:35 Europe/Berlin] Login attempt for username: nne
+[30-Aug-2024 17:34:35 Europe/Berlin] User found in database
+[30-Aug-2024 17:34:35 Europe/Berlin] Stored hashed password: $2y$10$WbkR4bA2sUMeWxV9Wa.zr.ZHv2dKW9zkcF8xpllwqXbWK75EUtnEC
+[30-Aug-2024 17:34:35 Europe/Berlin] Provided password: nne
+[30-Aug-2024 17:34:35 Europe/Berlin] Password verified successfully
+[30-Aug-2024 17:34:35 Europe/Berlin] Session variables set
+[30-Aug-2024 17:34:35 Europe/Berlin] Redirecting to dashboard.php
