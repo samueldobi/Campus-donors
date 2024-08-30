@@ -22,40 +22,58 @@ session_start();
 
 
     <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light p-3">
-    <div class="container-fluid">
-        <div class="d-flex align-items-center">
-            <div class="header_toggle"> 
-                <p class="text-dark" id="header-toggle"><i class="bi bi-filter-left"></i></p>
-            </div>
-        </div>
-        <div class="navbar-collapse collapse">
-            <ul class="navbar-nav ms-auto">
-                <?php if (isset($_SESSION['user_id'])): ?>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="<?php echo htmlspecialchars($_SESSION['profile_picture']); ?>" alt="" class="rounded-circle" width="30" height="30">
-                            Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="dashboard.php">Dashboard</a></li>
-                            <li><a class="dropdown-item" href="change_profile_picture.php">Change Profile Picture</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="logout.php">Logout</a></li>
-                        </ul>
-                    </li>
-                <?php else: ?>
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.php">Login</a>
-                    </li>
-                <?php endif; ?>
-            </ul>
-        </div>
-    </div>
-</nav>
+    <nav class="navbar  navbar-expand-lg navbar-light  p-3">
 
-  <!-- Navbar -->
+                <div class="container-fluid">
+
+                    <header class="header" id="header">
+                        <div class="header_toggle"> <i class='bx bx-menu' ></i>  <p class="text-dark" id="header-toggle"><i class="bi bi-filter-left "></i></p> 
+                     </header>
+                </div>
+
+                <div class="">  
+                    <!-- <a class="navbar-brand text-light" href="index.php">Campus Donors</a> -->
+                    <div class="navbar-nav ms-auto">
+                        <?php if (isset($_SESSION['user_id'])): ?>
+                            <div class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="<?php echo htmlspecialchars($_SESSION['profile_picture']); ?>" alt="" class="rounded-circle" width="30" height="30">
+                                    Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="dashboard.php">Dashboard</a></li>
+                                    <li><a class="dropdown-item" href="change_profile_picture.php">Change Profile Picture</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+                                </ul>
+                            </div>
+                        <?php else: ?>
+                            <a class="nav-link" href="login.php">Login</a>
+                        <?php endif; ?>
+                    </div>
+                </div>
+   
+                    <!-- <a class="navbar-brand text-light" href="index.php">Campus Donors</a>
+                    <div class="navbar-nav ms-auto">
+                        <?php if (isset($_SESSION['user_id'])): ?>
+                            <div class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="<?php echo htmlspecialchars($_SESSION['profile_picture']); ?>" alt="" class="rounded-circle" width="30" height="30">
+                                    Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="dashboard.php">Dashboard</a></li>
+                                    <li><a class="dropdown-item" href="change_profile_picture.php">Change Profile Picture</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+                                </ul>
+                            </div>
+                        <?php else: ?>
+                            <a class="nav-link" href="login.php">Login</a>
+                        <?php endif; ?>
+                    </div> -->
+                </div>
+</nav>
 
  <section class="dashboard">
  <body id="body-pd">
