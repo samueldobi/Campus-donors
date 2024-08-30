@@ -2,9 +2,8 @@
 :root {
     --header-height: 3rem;
     --nav-width: 68px;
-    /* --first-color: #4723D9; */
+    --first-color: #4723D9;
     --first-color-light: #AFA5D9;
-    --red: #DA1212;
     --white-color: #F7F6FB;
     --body-font: 'Nunito', sans-serif;
     --normal-font-size: 1rem;
@@ -32,18 +31,18 @@ i{
 }
 
 .header {
-    /* width: 100%;
+    width: 100%;
     height: var(--header-height);
     position: fixed;
     top: 0;
     left: 0;
     display: flex;
     align-items: center;
-    justify-content: space-between; */
+    justify-content: space-between;
     padding: 0 1rem;
-    /* background-color: var(--white-color);
+    background-color: var(--white-color);
     z-index: var(--z-fixed);
-    transition: .5s; */
+    transition: .5s;
 }
 
 .header_toggle {
@@ -71,7 +70,7 @@ i{
     left: -30%;
     width: var(--nav-width);
     height: 100vh;
-    /* background-color: var(--first-color); */
+    background-color: var(--first-color);
     padding: .5rem 1rem 0 0;
     transition: .5s;
     z-index: var(--z-fixed);
@@ -182,6 +181,6 @@ i{
 }
 /* @media screen and (max-width: 480px){
     .l-navbar{
-        /* display: none; 
+        display: none;
     }
 } */
