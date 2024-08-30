@@ -1,9 +1,0 @@
-[29-Aug-2024 11:55:02 Europe/Berlin] Login process started
-[29-Aug-2024 11:55:02 Europe/Berlin] Login process completed without redirect
-[29-Aug-2024 11:55:02 Europe/Berlin] Login attempt for username: brad
-[29-Aug-2024 11:55:02 Europe/Berlin] User found in database
-[29-Aug-2024 11:55:02 Europe/Berlin] Stored hashed password: $2y$10$NL0JxHTipLUXb/R3oc7.Lu2hl6hT4.7d6e0wfd8/4Qu05Gl7UiJli
-[29-Aug-2024 11:55:02 Europe/Berlin] Provided password: brad
-[29-Aug-2024 11:55:02 Europe/Berlin] Password verified successfully
-[29-Aug-2024 11:55:02 Europe/Berlin] Session variables set
-[29-Aug-2024 11:55:02 Europe/Berlin] Redirecting to dashboard.php

@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login'])) {
                 error_log("Password verified successfully");
                 $_SESSION['user_id'] = $user['id'];
                 $_SESSION['username'] = $user['username'];
-                $_SESSION['profile_picture'] = $user['profile_picture'] ?? './assets/images/defaultpic.png';
+                $_SESSION['profile_picture'] = $user['profile_picture'] ;
                 error_log("Session variables set");
                 error_log("Redirecting to dashboard.php");
                 header("Location: dashboard.php");

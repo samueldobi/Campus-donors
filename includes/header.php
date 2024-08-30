@@ -163,7 +163,7 @@
                     </ul>
                 </div>
             <?php else: ?>
-                <a class="nav-link" href="login.php">Login</a>
+                <!-- <a class="nav-link" href="login.php">Login</a> -->
             <?php endif; ?>
             <!-- PHP TEST FOR PROFILE PICTURE AFTER LOGIN -->
           </ul>

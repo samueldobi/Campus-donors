@@ -15,32 +15,114 @@ session_start();
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/dashboard.css">
     </head>
+
+
+
+
     <body>
-    <nav class="navbar navbar-expand-lg navbar-light  p-3">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light p-3">
     <div class="container-fluid">
-        <a class="navbar-brand text-light" href="index.php">Campus Donors</a>
-        <div class="navbar-nav ms-auto">
-            <?php if (isset($_SESSION['user_id'])): ?>
-                <div class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="<?php echo htmlspecialchars($_SESSION['profile_picture']); ?>" alt="" class="rounded-circle" width="30" height="30">
-                        Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="dashboard.php">Dashboard</a></li>
-                        <li><a class="dropdown-item" href="change_profile_picture.php">Change Profile Picture</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="logout.php">Logout</a></li>
-                    </ul>
-                </div>
-            <?php else: ?>
-                <a class="nav-link" href="login.php">Login</a>
-            <?php endif; ?>
+        <div class="d-flex align-items-center">
+            <div class="header_toggle"> 
+                <p class="text-dark" id="header-toggle"><i class="bi bi-filter-left"></i></p>
+            </div>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="navbar-nav ms-auto">
+                <?php if (isset($_SESSION['user_id'])): ?>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="<?php echo htmlspecialchars($_SESSION['profile_picture']); ?>" alt="" class="rounded-circle" width="30" height="30">
+                            Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="dashboard.php">Dashboard</a></li>
+                            <li><a class="dropdown-item" href="change_profile_picture.php">Change Profile Picture</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+                        </ul>
+                    </li>
+                <?php else: ?>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.php">Login</a>
+                    </li>
+                <?php endif; ?>
+            </ul>
         </div>
     </div>
 </nav>
 
-    </body>
- 
-<?php include 'includes/footer.php'?>
+  <!-- Navbar -->
+
+ <section class="dashboard">
+ <body id="body-pd">
+
+<!-- <header class="header" id="header">
+    <div class="header_toggle"> <i class='bx bx-menu' ></i>  <p class="text-dark" id="header-toggle"><i class="bi bi-filter-left "></i></p> </div>
+    <div class="header_img"> <img src="https://i.imgur.com/hczKIze.jpg" alt=""> </div>
+</header> -->
+<div class="l-navbar" id="nav-bar">
+    <nav class="nav">
+        <div>
+            <a href="#" class="nav_logo">
+                <i class='bx bx-layer'>
+                    <i class="bi bi-house-add text-light"></i>
+                </i>
+                <span class="nav_logo-name">  Campus Donors</span>
+            </a>
+            <div class="nav_list">
+                <a href="#" class="nav_link active">
+                    <i class="bi bi-person-circle"></i>
+                    <span class="nav_name">Profile</span>
+                </a>
+                <a href="#" class="nav_link">
+                    <i class="bi bi-backpack3-fill"></i>
+                    <span class="nav_name">Donation History</span>
+                </a>
+                <a href="#" class="nav_link">
+                    <i class="bi bi-bell"></i>
+                    <span class="nav_name">Notifications</span>
+                </a>
+                <!-- <a href="#" class="nav_link">
+                    <i class='bx bx-bookmark nav_icon'></i>
+                    <span class="nav_name">Bookmark</span>
+                </a>
+                <a href="#" class="nav_link">
+                    <i class='bx bx-folder nav_icon'></i>
+                    <span class="nav_name">Files</span>
+                </a>
+                <a href="#" class="nav_link">
+                    <i class='bx bx-bar-chart-alt-2 nav_icon'></i>
+                    <span class="nav_name">Stats</span>
+                </a> -->
+            </div>
+        </div>
+        <a href="#" class="nav_link">
+            <i class="bi bi-box-arrow-right"></i>
+            <span class="nav_name">SignOut</span>
+        </a>
+    </nav>
+</div>
+
+<!--Container Main start-->
+<div class="  p-2 ">
+    <p class=" fs-2 fw-bold">Profile Overview</p>
+    <p class="name">John Doe</p>
+    <p class="">Total Donations</p>
+    <p class="">Last Donated</p>
+</div>
+<!--Container Main end-->
+
+
+
+
+<!-- <script src="script.js">     -->
+</script>
+</body>
+ </section>
+
+ <script src="./assets/dashboard.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
