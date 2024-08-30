@@ -25,9 +25,9 @@ session_start();
             </p> 
         </div>
         <div class="dashboard-info ">
-            <!-- <div class="header_img "> <img src="https://i.imgur.com/hczKIze.jpg" alt=""> </div> -->
+
             <div class="">  
-                    <!-- <a class="navbar-brand text-light" href="index.php">Campus Donors</a> -->
+
                     <div class="navbar-nav ms-auto">
                       
                             <div class="nav-item dropdown">
@@ -35,12 +35,7 @@ session_start();
                                     <img src="<?php echo htmlspecialchars($_SESSION['profile_picture']); ?>" alt="" class="rounded-circle" width="30" height="30">
                                     Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?>
                                 </a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="dashboard.php">Dashboard</a></li>
-                                    <li><a class="dropdown-item" href="change_profile_picture.php">Change Profile Picture</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="logout.php">Logout</a></li>
-                                </ul>
+
                             </div>
                  
                     </div>
