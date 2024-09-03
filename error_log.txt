@@ -46,3 +46,12 @@
 [30-Aug-2024 17:34:35 Europe/Berlin] Password verified successfully
 [30-Aug-2024 17:34:35 Europe/Berlin] Session variables set
 [30-Aug-2024 17:34:35 Europe/Berlin] Redirecting to dashboard.php
+[03-Sep-2024 13:06:56 Europe/Berlin] Login process started
+[03-Sep-2024 13:06:56 Europe/Berlin] Login process completed without redirect
+[03-Sep-2024 13:06:56 Europe/Berlin] Login attempt for username: ik
+[03-Sep-2024 13:06:56 Europe/Berlin] User found in database
+[03-Sep-2024 13:06:56 Europe/Berlin] Stored hashed password: $2y$10$PpbWHKVtyrkQ0gmyDIBgKOhSStjDgWFep8pHeu2bVDjzS2YiGLvxG
+[03-Sep-2024 13:06:56 Europe/Berlin] Provided password: ik
+[03-Sep-2024 13:06:56 Europe/Berlin] Password verified successfully
+[03-Sep-2024 13:06:56 Europe/Berlin] Session variables set
+[03-Sep-2024 13:06:56 Europe/Berlin] Redirecting to dashboard.php

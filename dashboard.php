@@ -89,12 +89,18 @@ session_start();
     </div>
     
     <!--Container Main start-->
-    <div class="  p-2 ">
+    <section class="overview">
+        <div class="container">
         <p class=" fs-2 fw-bold">Profile Overview</p>
-        <p class="name"><?php echo htmlspecialchars($_SESSION['username']); ?></p>
-        <p class="">Total Donations</p>
-        <p class="">Last Donated</p>
-    </div>
+            <div class="row">
+            <div class="  p-2 ">
+              <p class="name"><?php echo htmlspecialchars($_SESSION['username']); ?></p> 
+                <p class="">Total Donations</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
     <!--Container Main end-->
     </body>
  </section>
