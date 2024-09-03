@@ -90,14 +90,24 @@ session_start();
     
     <!--Container Main start-->
     <section class="overview">
-        <div class="container">
-        <p class=" fs-2 fw-bold">Profile Overview</p>
-            <div class="row">
-            <div class="  p-2 ">
-              <p class="name"><?php echo htmlspecialchars($_SESSION['username']); ?></p> 
-                <p class="">Total Donations</p>
-            </div>
-            </div>
+        <div class="">
+            <p class=" fs-2 fw-bold">Profile Overview</p>
+                <div class="row justify-content-evenly  mt-5 mb-5 ">
+                    <div class="col-10 col-md-3 rounded border dashcard text-center fw-bold fs-3">
+                         
+                                <p class="p-2 ">Total Donations:</p>
+                                <p class="">0</p>
+                        </div>
+                    <div class="col-10 col-md-3 rounded border dashcard-two text-center fw-bold fs-3">
+                       
+                                <p class="p-2">Total Recieved</p>
+                        </div>
+                    <div class="col-10 col-md-3 rounded border dashcard-three text-center fw-bold fs-3">
+
+                                <p class="p-2">Total Donations</p>
+                        </div>
+            
+                </div>
         </div>
     </section>
 

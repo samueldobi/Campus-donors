@@ -5,6 +5,13 @@
     --first-color: #4723D9;
     --first-color-light: #AFA5D9;
     --red: #DA1212;
+    --darkblue: #041562;
+    --lightblue: #11468F;
+    --grey: #EEEEEE;
+    --lightgrey: #C6EBC5;
+    --new: #FBF8D5;
+    --second:#E4EFFB;
+    --third:#DEF7EA;
     --white-color: #F7F6FB;
     --body-font: 'Nunito', sans-serif;
     --normal-font-size: 1rem;
@@ -146,7 +153,17 @@ i{
 .height-100 {
     height: 100vh;
 }
-
+/* Profike Overview */
+.dashcard{
+    background-color: var(--grey);
+}
+.dashcard-two{
+    background-color: var(--new);
+}
+.dashcard-three{
+    background-color: var(--lightgrey);
+}
+/* Profike Overview */
 @media screen and (min-width: 768px) {
     body {
         margin: calc(var(--header-height) + 1rem) 0 0 0;
