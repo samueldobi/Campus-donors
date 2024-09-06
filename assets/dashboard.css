@@ -197,6 +197,13 @@ i{
         padding-left: calc(var(--nav-width) + 188px);
     }
 }
+/* Switch segment styling */
+.segment{
+    display: none;
+}
+.segment.active{
+    display: block;
+}
 /* @media screen and (max-width: 480px){
     .l-navbar{
         display: none;

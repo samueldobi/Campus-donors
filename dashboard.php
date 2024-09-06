@@ -56,15 +56,15 @@ session_start();
                     <span class="nav_logo-name">  Campus Donors</span>
                 </a>
                 <div class="nav_list">
-                    <a href="#" class="nav_link active" data-section="profile">
+                    <a href="#" class="nav_link active" data-segment="profile">
                         <i class="bi bi-person-circle"></i>
                         <span class="nav_name">Profile</span>
                     </a>
-                    <a href="#" class="nav_link" data-section="donation-history">
+                    <a href="#" class="nav_link" data-segment="donation-history">
                         <i class="bi bi-backpack3-fill"></i>
                         <span class="nav_name">Donation History</span>
                     </a>
-                    <a href="#" class="nav_link" data-section="notifications">
+                    <a href="#" class="nav_link" data-segment="notifications">
                         <i class="bi bi-bell"></i>
                         <span class="nav_name">Notifications</span>
                     </a>
@@ -93,7 +93,7 @@ session_start();
     <!--Container Main start-->
     <section class="overview">
         <!-- Profile overview -->
-        <div id="profile" class="">
+        <div id="profile" class=" segment active">
             <p class=" fs-2 fw-bold">Profile Overview</p>
                 <div class="row justify-content-evenly  mt-5 mb-5 ">
                     <div class="col-10 col-md-3 rounded border dashcard text-center fw-bold fs-3 mt-5 mb-5">
@@ -117,12 +117,14 @@ session_start();
         <!-- Profile overview -->
 
         <!-- Donation History -->
-         <div id="donation-history" class=" section">
+         <div id="donation-history" class=" segment">
            <p>donation history</p>
          </div>
         <!-- Donation History -->
          <!-- Notifications -->
-          <p>Notifications</p>
+          <div id="notifications" class="segment">
+              <p>Notifications</p>
+          </div>
          <!-- Notifications -->
     </section>
 
