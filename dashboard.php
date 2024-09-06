@@ -93,7 +93,7 @@ session_start();
     <!--Container Main start-->
     <section class="overview">
         <!-- Profile overview -->
-        <div id="profile" class=" segment active">
+        <div id="profile" class="segment action">
             <p class=" fs-2 fw-bold">Profile Overview</p>
                 <div class="row justify-content-evenly  mt-5 mb-5 ">
                     <div class="col-10 col-md-3 rounded border dashcard text-center fw-bold fs-3 mt-5 mb-5">
@@ -117,7 +117,7 @@ session_start();
         <!-- Profile overview -->
 
         <!-- Donation History -->
-         <div id="donation-history" class=" segment">
+         <div id="donation-history" class="segment">
            <p>donation history</p>
          </div>
         <!-- Donation History -->

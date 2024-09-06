@@ -198,11 +198,11 @@ i{
     }
 }
 /* Switch segment styling */
+.segment.action{
+    display: block;
+}
 .segment{
     display: none;
-}
-.segment.active{
-    display: block;
 }
 /* @media screen and (max-width: 480px){
     .l-navbar{

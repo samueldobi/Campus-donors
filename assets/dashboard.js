@@ -33,6 +33,33 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
     }
     linkColor.forEach(l=> l.addEventListener('click', colorLink))
-    
-     // Your code to run since DOM is loaded and ready
+
+
+    //Adding functionality for the dashboard to switch tabs
+    const links = document.querySelectorAll('.nav_link')
+    const segments = document.querySelectorAll('.segment')
+
+    links.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+
+            const sectionId = this.getAttribute('data-segment');
+
+            // Remove active class from all sections
+            segments.forEach(segment => {
+                segment.classList.remove('action');
+            });
+
+            // Add active class to the clicked section
+            document.getElementById(sectionId).classList.add('action');
+
+            // Optionally, you can add active class to the clicked link for styling
+            links.forEach(link => {
+                link.classList.remove('action');
+            });
+            this.classList.add('action');
+        });
     });
+
+    });
+
