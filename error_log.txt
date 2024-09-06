@@ -55,3 +55,21 @@
 [03-Sep-2024 13:06:56 Europe/Berlin] Password verified successfully
 [03-Sep-2024 13:06:56 Europe/Berlin] Session variables set
 [03-Sep-2024 13:06:56 Europe/Berlin] Redirecting to dashboard.php
+[06-Sep-2024 13:14:30 Europe/Berlin] Login process started
+[06-Sep-2024 13:14:30 Europe/Berlin] Login process completed without redirect
+[06-Sep-2024 13:14:30 Europe/Berlin] Login attempt for username: ik
+[06-Sep-2024 13:14:30 Europe/Berlin] User found in database
+[06-Sep-2024 13:14:30 Europe/Berlin] Stored hashed password: $2y$10$PpbWHKVtyrkQ0gmyDIBgKOhSStjDgWFep8pHeu2bVDjzS2YiGLvxG
+[06-Sep-2024 13:14:30 Europe/Berlin] Provided password: 
+[06-Sep-2024 13:14:30 Europe/Berlin] Password verification failed
+[06-Sep-2024 13:14:30 Europe/Berlin] password_verify result: false
+[06-Sep-2024 13:14:30 Europe/Berlin] Displaying error to user: Invalid username or password
+[06-Sep-2024 13:14:41 Europe/Berlin] Login process started
+[06-Sep-2024 13:14:41 Europe/Berlin] Login process completed without redirect
+[06-Sep-2024 13:14:41 Europe/Berlin] Login attempt for username: ik
+[06-Sep-2024 13:14:41 Europe/Berlin] User found in database
+[06-Sep-2024 13:14:41 Europe/Berlin] Stored hashed password: $2y$10$PpbWHKVtyrkQ0gmyDIBgKOhSStjDgWFep8pHeu2bVDjzS2YiGLvxG
+[06-Sep-2024 13:14:41 Europe/Berlin] Provided password: ik
+[06-Sep-2024 13:14:41 Europe/Berlin] Password verified successfully
+[06-Sep-2024 13:14:41 Europe/Berlin] Session variables set
+[06-Sep-2024 13:14:41 Europe/Berlin] Redirecting to dashboard.php

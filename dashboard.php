@@ -45,7 +45,8 @@ session_start();
                 </div>
         </div>
     </header>
-    <div class="l-navbar" id="nav-bar">
+    <!-- sidebar -->
+    <div class=" side-bar l-navbar" id="nav-bar">
         <nav class="nav">
             <div>
                 <a href="index.php" class="nav_logo">
@@ -55,15 +56,15 @@ session_start();
                     <span class="nav_logo-name">  Campus Donors</span>
                 </a>
                 <div class="nav_list">
-                    <a href="#" class="nav_link active">
+                    <a href="#" class="nav_link active" data-section="profile">
                         <i class="bi bi-person-circle"></i>
                         <span class="nav_name">Profile</span>
                     </a>
-                    <a href="#" class="nav_link">
+                    <a href="#" class="nav_link" data-section="donation-history">
                         <i class="bi bi-backpack3-fill"></i>
                         <span class="nav_name">Donation History</span>
                     </a>
-                    <a href="#" class="nav_link">
+                    <a href="#" class="nav_link" data-section="notifications">
                         <i class="bi bi-bell"></i>
                         <span class="nav_name">Notifications</span>
                     </a>
@@ -87,28 +88,42 @@ session_start();
             </a>
         </nav>
     </div>
+    <!-- sidebar -->
     
     <!--Container Main start-->
     <section class="overview">
-        <div class="">
+        <!-- Profile overview -->
+        <div id="profile" class="">
             <p class=" fs-2 fw-bold">Profile Overview</p>
                 <div class="row justify-content-evenly  mt-5 mb-5 ">
-                    <div class="col-10 col-md-3 rounded border dashcard text-center fw-bold fs-3">
+                    <div class="col-10 col-md-3 rounded border dashcard text-center fw-bold fs-3 mt-5 mb-5">
                          
                                 <p class="p-2 ">Total Donations:</p>
                                 <p class="">0</p>
                         </div>
-                    <div class="col-10 col-md-3 rounded border dashcard-two text-center fw-bold fs-3">
+                    <div class="col-10 col-md-3 rounded border dashcard-two text-center fw-bold fs-3 mt-5 mb-5">
                        
-                                <p class="p-2">Total Recieved</p>
+                                <p class="p-2">Total Recieved:</p>
+                                <p>0</p>
                         </div>
-                    <div class="col-10 col-md-3 rounded border dashcard-three text-center fw-bold fs-3">
+                    <div class="col-10 col-md-3 rounded border dashcard-three text-center fw-bold fs-3 mt-5 mb-5">
 
-                                <p class="p-2">Total Donations</p>
+                                <p class="p-2">Total Donations:</p>
+                                <p>0</p>
                         </div>
             
                 </div>
-        </div>
+            </div>
+        <!-- Profile overview -->
+
+        <!-- Donation History -->
+         <div id="donation-history" class=" section">
+           <p>donation history</p>
+         </div>
+        <!-- Donation History -->
+         <!-- Notifications -->
+          <p>Notifications</p>
+         <!-- Notifications -->
     </section>
 
     <!--Container Main end-->
