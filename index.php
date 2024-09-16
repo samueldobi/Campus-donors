@@ -4,8 +4,8 @@
     <div class="container">
         <div class="row hero-responsive">
             <div class="col-lg-12 d-flex flex-column text-light text-center ">
-                <p class = "fs-1 fw-bold text-center ">Welcome to Campus Donors</p>
-                <p class="fs-3">A university platform for saving lives. Join the University <br>of Benin community in donating blood and making a difference.</p>
+                <p class = "fs-1 fw-bold text-center text-dark">Welcome to Campus Donors</p>
+                <p class="fs-3 text-dark">A university platform for saving lives. Join the University <br>of Benin community in donating blood and making a difference.</p>
 
                 <div class="button-links">
                     <a href="donate.php">
@@ -18,18 +18,16 @@
                 </div>
             </div>
  
-           <!-- <div class="col-lg-6 hero-side-img">
-                <img src="assets/images/hero-side-img.svg"  class="img-fluid w-10" > 
-            </div> -->
+
 
             </div>
         </div>
     <div>
-</section>
+</section> 
 <!-- ======= Hero  Section ======= -->
 
 <!-- ======= About Section ======= -->
- <section class="about mt-5 mb-5" id="about">
+  <section class="about mt-5 mb-5" id="about">
     <div class="container p-3">
         <div class="row g-2">
             <h2 class="text-center fw-bold about-header p-2">
@@ -41,7 +39,7 @@
             </p>
         </div>
     </div>
- </section>
+ </section> 
 <!-- ======= About Section ======= -->
 
 <!-- ======= Services Section ======= -->
@@ -113,7 +111,7 @@
 <!-- ======= Services Section ======= -->
 
 <!-- ======= Why Donate  Section ======= -->
- <section class="why-donate mt-5 mb-5">
+  <section class="why-donate mt-5 mb-5">
     <div class="container">
 
         <div class="d-sm-flex ">
@@ -131,116 +129,99 @@
             </div>
         </div>
     </div>
- </section>
+ </section> 
 <!-- ======= Why Donate  Section ======= -->
 
 <!-- ======= Testimonials  Section ======= -->
-<div class="container mt-5 mb-5 g-2">
-    <div class="row g-2 ">
-        <p class="testimonials-header text-lg-center text-sm-start fw-bold fs-2 p-2 mt-5">
-            Testimonials
-        </p>
-        <p class="testimonials-text text-lg-center text-sm-start fs-4  m-1">
-            Here are students that have benefitted from  and contributed to our programme.
-        </p>
-    </div>
-    <div class="row g-2 mt-3 mb-3">
-        <div class="col-md-4">
-            <div class="card p-3 text-center px-4">
-                
-                <div class="user-image">
+ <section class="testimonials mt-5 mb-5">
+ <div class="container ">
+
+            <p class="testimonials-header text-lg-center text-sm-start fw-bold fs-2 p-2 mt-5">
+                Testimonials
+            </p>
+            <p class="testimonials-text text-lg-center text-sm-start fs-4  ">
+                Here are students that have benefitted from  and contributed to our programme.
+            </p>
+
+        <div class="row ">
+            <div class="col-md-4">
+                <div class="card p-3 text-center">
+                    <div class="user-image">
+                        <img src="assets/images/naij.jpg" class="rounded-circle" width="80">
+                    </div>
                     
-            <img src="assets/images/naij.jpg" class="rounded-circle" width="80"
-                    >
-                    
-                </div>
-                
-                <div class="user-content">
-                    
-                    <h5 class="mb-0">Idemudia Benita</h5>
-                    <span>Architecture Student</span>
-                    <p>"As a first-time donor, I was nervous, but the website guided me through every step. The information provided helped me understand the process, and now, I’ve become a regular donor. It’s empowering to be part of something so important."</p>
-                    
-                </div>
-                
-                <div class="ratings">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
+                    <div class="user-content">
+                        
+                        <h5 class="mb-0">Idemudia Benita</h5>
+                        <span>Architecture Student</span>
+                        <p>"As a first-time donor, I was nervous, but the website guided me through every step. The information provided helped me understand the process, and now, I’ve become a regular donor. It’s empowering to be part of something so important."</p>
+                        
+                    </div>
+
                     
                 </div>
-                
             </div>
-        </div>
-        
-        <div class="col-md-4">
             
-            <div class="card p-3 text-center px-4">
+            <div class="col-md-4">
                 
-                <div class="user-image">
+                <div class="card p-3 text-center">
                     
-            <img src="assets/images/naij2.jpg" class="rounded-circle" width="80"
-                    >
+                    <div class="user-image">
+                        
+                <img src="assets/images/naij2.jpg" class="rounded-circle" width="80"
+                        >
+                        
+                    </div>
                     
-                </div>
-                
-                <div class="user-content">
-                    
-                    <h5 class="mb-0"> Osagie Aisosa</h5>
-                    <span>Medical Student</span>
-                    <p>"I never realized how easy it was to save a life until I used this website. Signing up to donate was quick, and the reminders made sure I never missed a blood drive. It feels amazing to know that I’ve made a difference in someone’s life."</p>
-                    
-                </div>
-                
-                <div class="ratings">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
+                    <div class="user-content">
+                        
+                        <h5 class="mb-0"> Osagie Aisosa</h5>
+                        <span>Medical Student</span>
+                        <p>"I never realized how easy it was to save a life until I used this website. Signing up to donate was quick, and the reminders made sure I never missed a blood drive. It feels amazing to know that I’ve made a difference in someone’s life."</p>
+                        
+                    </div>
                     
                 </div>
                 
             </div>
             
-        </div>
-        
-        <div class="col-md-4">
-            
-            <div class="card p-3 text-center px-4">
+            <div class="col-md-4">
                 
-                <div class="user-image">
+                <div class="card p-3 text-center">
                     
-            <img src="assets/images/naij3.jpg" class="rounded-circle" width="80"
-                    >
+                    <div class="user-image">
+                        
+                <img src="assets/images/naij3.jpg" class="rounded-circle" width="80"
+                        >
+                        
+                    </div>
                     
-                </div>
-                
-                <div class="user-content">
+                    <div class="user-content">
+                        
+                        <h5 class="mb-0">Osayande Johnson</h5>
+                        <span>Engineering Student</span>
+                        <p>"This website made finding a donor for my cousin so much easier. Within minutes, I was connected to someone who could help. I’m incredibly grateful for the support and how smoothly everything went."</p>
+                        
+                    </div>
                     
-                    <h5 class="mb-0">Osayande Johnson</h5>
-                    <span>Engineering Student</span>
-                    <p>"This website made finding a donor for my cousin so much easier. Within minutes, I was connected to someone who could help. I’m incredibly grateful for the support and how smoothly everything went."</p>
-                    
-                </div>
-                
-                <div class="ratings">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
+                    <div class="ratings">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        
+                    </div>
                     
                 </div>
                 
             </div>
             
+            
         </div>
-        
-        
-    </div>
     
-</div>
+  </div> 
+ </section>
+ 
 <!-- ======= Testimonials  Section ======= -->
  
 <!-- ======= Contact  Section ======= -->

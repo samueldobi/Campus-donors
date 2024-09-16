@@ -46,7 +46,7 @@ session_start();
         </div>
     </header>
     <!-- sidebar -->
-    <div class=" side-bar l-navbar" id="nav-bar">
+    <div class=" side-bar l-navbar" id="navbar">
         <nav class="nav">
             <div>
                 <a href="index.php" class="nav_logo">

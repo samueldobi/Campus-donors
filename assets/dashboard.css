@@ -163,7 +163,7 @@ i{
 .dashcard-three{
     background-color: var(--lightgrey);
 }
-/* Profike Overview */
+/* Profile Overview */
 @media screen and (min-width: 768px) {
     body {
         margin: calc(var(--header-height) + 1rem) 0 0 0;
@@ -197,6 +197,11 @@ i{
         padding-left: calc(var(--nav-width) + 188px);
     }
 }
+/* @media screen and (max-width: 767px){
+    .show {
+        width: 60%;
+    }
+} */
 /* Switch segment styling */
 .segment.action{
     display: block;

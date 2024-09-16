@@ -10,7 +10,7 @@
 }
 /* General Styling */
 /* *{
- border: 1px solid red;
+  border: 1px solid red; 
 } */
 html {
     scroll-behavior: smooth;
@@ -25,6 +25,12 @@ body{
 }
 a{
     text-decoration: none;
+}
+section{
+    margin: 0px;
+    padding: 0px;   
+    overflow: hidden;
+
 }
 .login-btn{
     background: none;
@@ -145,6 +151,7 @@ nav{
 }
  /* Media Queries */
  @media screen and (max-width: 480px) {
+    
     .why-donate-text{
         transform: translateY(1%);
     }

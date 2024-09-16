@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function(event) {
    
-    const showNavbar = (toggleId, navId, bodyId, headerId) =>{
+    const showNavbar = (toggleId, navbar, bodyId, headerId) =>{
     const toggle = document.getElementById(toggleId),
-    nav = document.getElementById(navId),
+    nav = document.getElementById(navbar),
     bodypd = document.getElementById(bodyId),
     headerpd = document.getElementById(headerId)
     
@@ -20,8 +20,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
     })
     }
     }
-    
-    showNavbar('header-toggle','nav-bar','body-pd','header')
+    // Close navbar if  customer clicks outside of it
+    document.addEventListener('click', (event)=>{
+        if (!nav.contains(event.target) && !toggle.contains(event.target)) {
+            nav.classList.remove('show');
+            toggle.classList.remove('bx-x');
+            bodypd.classList.remove('body-pd');
+            headerpd.classList.remove('body-pd');
+        }
+    })
+    showNavbar('header-toggle','navbar','body-pd','header')
     
     /*===== LINK ACTIVE =====*/
     const linkColor = document.querySelectorAll('.nav_link')
