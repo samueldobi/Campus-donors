@@ -20,7 +20,13 @@ if ( $_SERVER["REQUEST_METHOD"] === "POST"){
     require_once 'signup_control.inc.php';
 
     // ERROR HANDLERS
-
+    if (is_input_empty($username, $password ,$email)){
+        //error message goes here
+    }
+    if (is_email_invalid($email)){
+        //error message goes here 
+    }
+    if ()
     //CREATE USER FUNCTION
 
 
