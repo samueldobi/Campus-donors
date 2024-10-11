@@ -5,7 +5,7 @@
 if ( $_SERVER["REQUEST_METHOD"] === "POST"){
     $username =  $_POST["username"];
     $email =  $_POST["email"];
-    $pwd =  $_POST["password"];
+    $password =  $_POST["password"];
 
 
 
@@ -15,13 +15,13 @@ if ( $_SERVER["REQUEST_METHOD"] === "POST"){
         die("Connection failed: " . $e->getMessage() . " (Error code: " . $e->getCode() . ")");
     }
     // REQUIRE THE NECCESARY FILES
-    require_once './includes/dbh.inc.php';
+    require_once '../dbh.inc.php';
     require_once 'signup_model.inc.php';
     require_once 'signup_control.inc.php';
 
     // ERROR HANDLERS
     $errors = [];
-    if (is_input_empty($username, $password ,$email)){
+    if (is_input_empty($username, $password, $email)){
         $errors["empty_input"] = "Fill in all inputs";
     }
     if (is_email_invalid($email)){
@@ -37,11 +37,11 @@ if ( $_SERVER["REQUEST_METHOD"] === "POST"){
 
     }
     //WE REQUIRE THE CONFIG FILE TO MAKE USE OF THE SESSION START FUNCTION
-    require_once './includes/config_session.php';
+    require_once '../config_session.php';
     //FUNCTION TO HANDLE IF ERRORS ARE NOW SHOWN
     if ($errors){
         $_SESSION["errors_signup"] = $errors;
-        header("Location:.../index.php");
+        header("Location:../index.php");
         die();
     }
 

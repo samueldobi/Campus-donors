@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-function is_input_empty(string $username, string $password , string $email){
+function is_input_empty(string $username, string $password, string $email){
     // empty is a built in php function
-    if(empty($username || empty($password) || empty($email))){
+    if(empty($username) || empty($password) || empty($email)){
         return true;
     }else {
         return false;

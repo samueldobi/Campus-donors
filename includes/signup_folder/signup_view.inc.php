@@ -8,7 +8,7 @@ function check_errors(){
 
         echo '<br>';
         foreach ($errors as $error) {
-           echo '<p>' . $error .'</p>';
+           echo '<p class = "" >' . $error .'</p>';
         }
 
         unset($_SESSION["errors_signup"]);

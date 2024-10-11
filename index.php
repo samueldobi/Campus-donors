@@ -1,6 +1,7 @@
 <?php include 'includes/header.php' ?>
-<?php 
-check_errors();
+<?php
+require_once 'includes/signup_folder/signup_view.inc.php';
+require_once 'includes/config_session.php';
 ?>
   <!-- ======= Hero  Section ======= -->
 <section class="hero-section  d-flex align-items-md-center mb-5  p-2">

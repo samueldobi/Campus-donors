@@ -1,5 +1,6 @@
 <?php
 require_once 'includes/config_session.php';
+require_once 'signup_folder/signup_view.inc.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -128,12 +129,19 @@ require_once 'includes/config_session.php';
                           <div class="p-2 text-center">Already have an account? 
                             <span style="color:#DA1212" data-bs-target="#loginModal" data-bs-toggle="modal" data-bs-dismiss="modal">Login</span>
                           </div>
+
+                          <!-- ERROR MESSAGE CODE -->
+                          <?php
+                          check_errors();
+                          ?>
+                            <!-- ERROR MESSAGE CODE -->
                         </div>
                       </form>
                     </div>
                   </div>
                 </div>
               </div>
+        
 
 <!-- Button to open the first modal -->
 <a class="text-light" data-bs-toggle="modal" href="#loginModal" role="button"> Login </a>
