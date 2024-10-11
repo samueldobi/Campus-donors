@@ -98,20 +98,20 @@ require_once 'includes/config_session.php';
                     </div>
                   </div>
 
-<!-- Second Modal (Register) -->
+<!-- Second Modal (SIGNUP) -->
               <div class="modal fade" id="registerModal" aria-hidden="true" aria-labelledby="registerModalLabel" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title text-center fw-bold" id="registerModalLabel">Register</h5>
+                      <h5 class="modal-title text-center fw-bold" id="registerModalLabel">SIGNUP</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                      <form action="../includes/signup_folder/signup.inc.php" method="POST">
+                      <form action="includes/signup_folder/signup.inc.php" method="POST">
                         <!-- Username Input -->
                         <div class="m-3">
                           <label for="registerUsername" class="form-label fw-bold">Username</label>
-                          <input type="text" class="form-control" id="registerUsername" name="username">
+                          <input  type="text" class="form-control" id="registerUsername" name="username">
                         </div>
                         <!-- Email Input -->
                         <div class="m-3">
@@ -121,7 +121,7 @@ require_once 'includes/config_session.php';
                         <!-- Password Input -->
                         <div class="m-3">
                           <label for="registerPassword" class="form-label fw-bold">Password</label>
-                          <input type="password" class="form-control" id="registerPassword" placeholder="Must contain numbers and letters" name="password">
+                          <input  type="password" class="form-control" id="registerPassword" placeholder="Must contain numbers and letters" name="password">
                         </div>
                         <div class="modal-footer d-flex flex-column">
                           <input type="submit" name="register" value="Register" class="btn text-light mx-auto btn-style text-center modal-btn">
