@@ -1,3 +1,6 @@
+<?php
+require_once 'includes/config_session.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,16 +69,7 @@
                       <div class="modal-content">
                         <div class="modal-header">
                           <h5 class="modal-title text-center fw-bold" id="loginModalLabel">Login</h5>
-                          <?php 
-                              if (isset($_SESSION['message'])) {
-                                  echo "<p>{$_SESSION['message']}</p>";
-                                  unset($_SESSION['message']);
-                              }
-                              if (isset($error)) {
-                                  error_log("Displaying error to user: " . $error);
-                                  echo "<p>$error</p>"; 
-                              }
-                              ?>
+
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
@@ -86,10 +80,7 @@
                               <input type="text" class="form-control" id="loginUsername" name="username">
                             </div>
                             <!-- Email Input -->
-                            <!-- <div class="m-3">
-                              <label for="loginEmail" class="form-label fw-bold">Email address</label>
-                              <input type="email" class="form-control" id="loginEmail" name="email" placeholder="Your Email Address is safe">
-                            </div> -->
+
                             <!-- Password Input -->
                             <div class="m-3">
                               <label for="loginPassword" class="form-label fw-bold">Password</label>
@@ -116,7 +107,7 @@
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                      <form action="register.php" method="POST">
+                      <form action="../includes/signup_folder/signup.inc.php" method="POST">
                         <!-- Username Input -->
                         <div class="m-3">
                           <label for="registerUsername" class="form-label fw-bold">Username</label>
