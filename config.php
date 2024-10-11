@@ -3,9 +3,9 @@ session_start();
 
 // DATABASE INITIALIZATION
 $host = 'localhost';
+$dbname = 'blood_donation_app';
 $username = 'iyke';
 $password = "Madeofsteel";
-$dbname = 'blood_donation_app';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
