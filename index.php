@@ -1,4 +1,7 @@
 <?php include 'includes/header.php' ?>
+<?php 
+check_errors();
+?>
   <!-- ======= Hero  Section ======= -->
 <section class="hero-section  d-flex align-items-md-center mb-5  p-2">
     <div class="container">
