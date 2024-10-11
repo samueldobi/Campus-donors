@@ -26,7 +26,12 @@ if ( $_SERVER["REQUEST_METHOD"] === "POST"){
     if (is_email_invalid($email)){
         //error message goes here 
     }
-    if ()
+    if (is_username_taken( $pdo,  $username)){
+        //error message goes here 
+    }
+    if (){
+        //error message goes here 
+    }
     //CREATE USER FUNCTION
 
 

@@ -26,3 +26,11 @@ function is_username_taken(object $pdo,  string $username){
         return false;
     }
 }
+function is_email_registered(object $pdo,  string $email){
+    //this function is attached to the model file and it checks if the email is already registered
+    if(get_email( $pdo,  $email)){
+        return true;
+    }else {
+        return false;
+    }
+}
