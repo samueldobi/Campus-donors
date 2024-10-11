@@ -8,8 +8,9 @@ function check_errors(){
 
         echo '<br>';
         foreach ($errors as $error) {
-           echo '<p class = "" >' . $error .'</p>';
+           echo '<p class = "form-error" >' . $error .'</p>';
         }
+        echo '<a href = "../../index.php"> Go to Home Page</a>';
 
         unset($_SESSION["errors_signup"]);
     }

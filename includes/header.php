@@ -131,9 +131,7 @@ require_once 'signup_folder/signup_view.inc.php';
                           </div>
 
                           <!-- ERROR MESSAGE CODE -->
-                          <?php
-                          check_errors();
-                          ?>
+                         
                             <!-- ERROR MESSAGE CODE -->
                         </div>
                       </form>

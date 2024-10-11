@@ -72,21 +72,15 @@ nav{
     color:var(--red);
 }
 /* Hero Section */
-
-/* About Us Section */
-/* .about-header{
-    word-spacing: 10px;
-} */
+.form-error{
+    color: red;
+}
 #campus{
     border-bottom: 5px solid var(--red);
 }
 /* About Us Section */
 
 /* Services section */
-/* .services{
-     background-color: var(--grey); 
-     transform: skewY(-5deg) 
-} */
 .serv-img img{
     width: 50%;
 }
@@ -101,7 +95,6 @@ nav{
 }
 .img-one{
     background-color: var(--new);
-    /* height: ; */
 }
 .img-two{
     background-color: var(--second);
@@ -139,8 +132,6 @@ nav{
     margin-top:5px;
     font-size:12px;
 }
-
-
 .ratings i{
     color:blue;
 }

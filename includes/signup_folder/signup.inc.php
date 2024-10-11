@@ -41,7 +41,7 @@ if ( $_SERVER["REQUEST_METHOD"] === "POST"){
     //FUNCTION TO HANDLE IF ERRORS ARE NOW SHOWN
     if ($errors){
         $_SESSION["errors_signup"] = $errors;
-        header("Location:../index.php");
+        header("Location: signup_error_page.php");
         die();
     }
 
