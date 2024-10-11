@@ -20,19 +20,28 @@ if ( $_SERVER["REQUEST_METHOD"] === "POST"){
     require_once 'signup_control.inc.php';
 
     // ERROR HANDLERS
+    $errors = [];
     if (is_input_empty($username, $password ,$email)){
-        //error message goes here
+        $errors["empty_input"] = "Fill in all inputs";
     }
     if (is_email_invalid($email)){
-        //error message goes here 
+        $errors["invalid_email"] = "Invalid email used";
+ 
     }
     if (is_username_taken( $pdo,  $username)){
-        //error message goes here 
+        $errors["username_taken"] = "Username already taken";
+
     }
-    if (){
-        //error message goes here 
+    if (is_email_registered( $pdo, $email)){
+        $errors["email_used"] = "Email already registered";
+
     }
-    //CREATE USER FUNCTION
+    //WE REQUIRE THE CONFIG FILE TO MAKE USE OF THE SESSION START FUNCTION
+    require_once './includes/config_session.php';
+    //FUNCTION TO HANDLE IF ERRORS ARE NOW SHOWN
+    if ($errors){
+        $_SESSION["errors_signup"] = $errors;
+    }
 
 
 
