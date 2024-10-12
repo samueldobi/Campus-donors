@@ -37,6 +37,7 @@ if ( $_SERVER["REQUEST_METHOD"] === "POST"){
 
     }
     //WE REQUIRE THE CONFIG FILE TO MAKE USE OF THE SESSION START FUNCTION
+    
     require_once '../config_session.php';
     //FUNCTION TO HANDLE IF ERRORS ARE NOW SHOWN
     if ($errors){
@@ -44,8 +45,8 @@ if ( $_SERVER["REQUEST_METHOD"] === "POST"){
         header("Location: signup_error_page.php");
         die();
     }
-
-
+    // NOW WE CREATE THE ACTUAL USER
+    create_user($pdo, $username, $password, $email);
 
 
 }else{

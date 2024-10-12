@@ -34,3 +34,7 @@ function is_email_registered(object $pdo,  string $email){
         return false;
     }
 }
+function create_user(object $pdo, string $username, string $password, string $email){
+    //this function is attached to the model file and it checks if the email is already registered
+    set_user( $pdo, $username, $password,  $email);
+}

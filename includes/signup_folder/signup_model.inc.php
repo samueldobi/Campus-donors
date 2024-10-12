@@ -24,3 +24,12 @@ function get_email(object $pdo, string $email){
     $result =  $stmt -> fetch(PDO::FETCH_ASSOC);
     return $result;
 }
+// FUNCTION TO REGISTER THE USER IN THE DATABASE
+function set_user(object $pdo,  string $password, string $username, string $email){
+    $query = "INSERT INTO users (username, password, email) VALUES(:username, :password, :email)";
+    $stmt = $pdo ->prepare($query);
+    $stmt -> bindParam(":username", $username);
+    $stmt -> bindParam(":password", $password);
+    $stmt -> bindParam(":email", $email);
+    $stmt -> execute();
+}
