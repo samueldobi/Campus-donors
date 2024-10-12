@@ -89,7 +89,7 @@
                 </a>
               </li>
               <li class="me-3">
-                <a href="#!" class="link-dark link-opacity-75-hover">
+                <a href="#!" class="link-dark link-opacity-75-">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
                    
                   </svg>
@@ -103,7 +103,7 @@
                 </a>
               </li>
               <li class="">
-                <a href="#!" class="link-dark link-opacity-75-hover">
+                <a href="#!" class="link-dark link-opacity-75-">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
                   
                   </svg>

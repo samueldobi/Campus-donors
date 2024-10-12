@@ -68,6 +68,10 @@ nav{
     width: 100%;
     background-color:var(--red) ;
 }
+.modal-btn:hover{
+    width: 100%;
+    background-color:var(--red) ;
+}
 .modal-title{
     color:var(--red);
 }

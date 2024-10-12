@@ -53,28 +53,18 @@ require_once 'signup_folder/signup_view.inc.php';
           </ul>
           <ul class="navbar-nav ms-auto   ">
             <li class="nav-item mx-2">
-          
-            <!-- Modal Button -->
-                  <!-- Button trigger modal -->
-                  <!-- <button type="button" class=" login-reg" data-bs-target="#exampleModal"> -->
-                  <!-- <a class="nav-link login-btn " href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</a> -->
-                  <!-- </button> -->
 
-                  <!-- Modal -->
-               
-
-                   <!--Double  Modal Test -->
                  <!-- First Modal (Login) -->
                   <div class="modal fade" id="loginModal" aria-hidden="true" aria-labelledby="loginModalLabel" tabindex="-1">
                     <div class="modal-dialog modal-dialog-centered">
                       <div class="modal-content">
                         <div class="modal-header">
                           <h5 class="modal-title text-center fw-bold" id="loginModalLabel">Login</h5>
-
+                         
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                          <form action="login.php" method="POST">
+                          <form action="includes/login_folder/login.inc.php" method="POST">
                             <!-- Username Input -->
                             <div class="m-3">
                               <label for="loginUsername" class="form-label fw-bold">Username</label>
@@ -89,6 +79,8 @@ require_once 'signup_folder/signup_view.inc.php';
                             </div>
                             <div class="modal-footer d-flex flex-column">
                               <input type="submit" name="login" value="Login" class="btn text-light mx-auto btn-style text-center modal-btn">
+                              <h5>hello</h5>
+
                               <div class="p-2 text-center">Don't have an account? 
                                 <span style="color:#DA1212" data-bs-target="#registerModal" data-bs-toggle="modal" data-bs-dismiss="modal">Signup</span>
                               </div>
@@ -146,11 +138,10 @@ require_once 'signup_folder/signup_view.inc.php';
                    <!--Double  Modal Test -->
                
             <!-- PHP TEST FOR PROFILE PICTURE AFTER LOGIN -->
-            <?php if (isset($_SESSION['user_id'])): ?>
-                <div class="nav-item dropdown">
+                <!-- <div class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="<?php echo htmlspecialchars($_SESSION['profile_picture']); ?>" alt="Profile" class="rounded-circle" width="30" height="30">
-                        Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?>
+                        <img src="" alt="Profile" class="rounded-circle" width="30" height="30">
+                        Welcome,
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="dashboard.php">Dashboard</a></li>
@@ -158,11 +149,8 @@ require_once 'signup_folder/signup_view.inc.php';
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="logout.php">Logout</a></li>
                     </ul>
-                </div>
-            <?php else: ?>
-                <!-- <a class="nav-link" href="login.php">Login</a> -->
-            <?php endif; ?>
-            <!-- PHP TEST FOR PROFILE PICTURE AFTER LOGIN -->
+                </div> -->
+
           </ul>
         </div>
       </div>
