@@ -13,5 +13,8 @@ function check_errors(){
         echo '<a href = "../../index.php"> Go to Home Page</a>';
 
         unset($_SESSION["errors_signup"]);
+    } else {
+        echo '<p>Signup Succesful </p>';
+        echo '<a href = "../../index.php"> Go to Home Page</a>';
     }
 }
