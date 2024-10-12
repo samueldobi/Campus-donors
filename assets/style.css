@@ -75,6 +75,7 @@ nav{
 .form-error{
     color: red;
 }
+.form-success
 #campus{
     border-bottom: 5px solid var(--red);
 }
