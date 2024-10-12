@@ -28,8 +28,13 @@ function get_email(object $pdo, string $email){
 function set_user(object $pdo,  string $password, string $username, string $email){
     $query = "INSERT INTO users (username, password, email) VALUES(:username, :password, :email)";
     $stmt = $pdo ->prepare($query);
+        // function to hash password
+        $options = [
+            'cost' => 12
+        ];
+        $hashedPwd = password_hash($password, PASSWORD_BCRYPT, $options);
     $stmt -> bindParam(":username", $username);
-    $stmt -> bindParam(":password", $password);
+    $stmt -> bindParam(":password", $hashedPwd);
     $stmt -> bindParam(":email", $email);
     $stmt -> execute();
 }
