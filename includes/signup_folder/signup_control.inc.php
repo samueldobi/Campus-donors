@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-function is_input_empty(string $username, string $password, string $email){
+function is_input_empty(string $username, string $pwd, string $email){
     // empty is a built in php function
-    if(empty($username) || empty($password) || empty($email)){
+    if(empty($username) || empty($pwd) || empty($email)){
         return true;
     }else {
         return false;
@@ -34,7 +34,7 @@ function is_email_registered(object $pdo,  string $email){
         return false;
     }
 }
-function create_user(object $pdo, string $username, string $password, string $email){
+function create_user(object $pdo, string $username, string $pwd, string $email){
     //this function is attached to the model file and it checks if the email is already registered
-    set_user( $pdo, $username, $password,  $email);
+    set_user( $pdo, $username, $pwd,  $email);
 }

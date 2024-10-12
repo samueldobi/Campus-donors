@@ -5,7 +5,7 @@
 if ( $_SERVER["REQUEST_METHOD"] === "POST"){
     $username =  $_POST["username"];
     $email =  $_POST["email"];
-    $password =  $_POST["password"];
+    $pwd =  $_POST["password"];
 
 
 
@@ -21,7 +21,7 @@ if ( $_SERVER["REQUEST_METHOD"] === "POST"){
 
     // ERROR HANDLERS
     $errors = [];
-    if (is_input_empty($username, $password, $email)){
+    if (is_input_empty($username, $pwd, $email)){
         $errors["empty_input"] = "Fill in all inputs";
     }
     if (is_email_invalid($email)){
@@ -46,7 +46,10 @@ if ( $_SERVER["REQUEST_METHOD"] === "POST"){
         die();
     }
     // NOW WE CREATE THE ACTUAL USER
-    create_user($pdo, $username, $password, $email);
+    create_user($pdo, $username, $pwd, $email);
+
+    header("Location:.../index.php");
+    die();
 
 
 }else{
