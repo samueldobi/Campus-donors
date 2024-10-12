@@ -1,7 +1,7 @@
 <?php
 
 $host = 'localhost';
-$dbname = 'signup_form';
+$dbname = 'blood_donation_App';
 $dbusername = 'iyke';
 $dbpassword = ''; // Add your password here if required
 
