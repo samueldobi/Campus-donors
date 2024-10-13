@@ -67,19 +67,19 @@ require_once 'signup_folder/signup_view.inc.php';
                           <form action="includes/login_folder/login.inc.php" method="POST">
                             <!-- Username Input -->
                             <div class="m-3">
-                              <label for="loginUsername" class="form-label fw-bold">Username</label>
-                              <input type="text" class="form-control" id="loginUsername" name="username">
+                              <label for="" class="form-label fw-bold">Username</label>
+                              <input type="text" class="form-control" id="" name="username">
                             </div>
                             <!-- Email Input -->
 
                             <!-- Password Input -->
                             <div class="m-3">
-                              <label for="loginPassword" class="form-label fw-bold">Password</label>
-                              <input type="password" class="form-control" id="loginPassword" placeholder="Must contain numbers and letters" name="password">
+                              <label for="" class="form-label fw-bold">Password</label>
+                              <input type="password" class="form-control" id="" name="password">
                             </div>
                             <div class="modal-footer d-flex flex-column">
                               <input type="submit" name="login" value="Login" class="btn text-light mx-auto btn-style text-center modal-btn">
-                              <h5>hello</h5>
+                        
 
                               <div class="p-2 text-center">Don't have an account? 
                                 <span style="color:#DA1212" data-bs-target="#registerModal" data-bs-toggle="modal" data-bs-dismiss="modal">Signup</span>

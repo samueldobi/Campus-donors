@@ -10,11 +10,7 @@ if ( $_SERVER["REQUEST_METHOD"] === "POST"){
 
 
     try {
-        //code...
-    } catch (PDOException $e) {
-        die("Connection failed: " . $e->getMessage() . " (Error code: " . $e->getCode() . ")");
-    }
-    // REQUIRE THE NECCESARY FILES
+         // REQUIRE THE NECCESARY FILES
     require_once '../dbh.inc.php';
     require_once 'signup_model.inc.php';
     require_once 'signup_control.inc.php';
@@ -59,6 +55,10 @@ if ( $_SERVER["REQUEST_METHOD"] === "POST"){
     die();
 
 
+    } catch (PDOException $e) {
+        die("Connection failed: " . $e->getMessage() . " (Error code: " . $e->getCode() . ")");
+    }
+   
 }else{
     header("Location:.../index.php");
     die();
