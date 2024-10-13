@@ -1,6 +1,7 @@
 <?php
 require_once 'includes/config_session.php';
 require_once 'signup_folder/signup_view.inc.php';
+require_once 'login_folder/login_view.inc.php'
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -84,6 +85,10 @@ require_once 'signup_folder/signup_view.inc.php';
                               <div class="p-2 text-center">Don't have an account? 
                                 <span style="color:#DA1212" data-bs-target="#registerModal" data-bs-toggle="modal" data-bs-dismiss="modal">Signup</span>
                               </div>
+                              <!-- ERROR TEXT -->
+                              <!-- <div class="error-text">
+                              </div> -->
+                              <!-- ERROR TEXT -->
                             </div>
                           </form>
                         </div>
@@ -122,9 +127,6 @@ require_once 'signup_folder/signup_view.inc.php';
                             <span style="color:#DA1212" data-bs-target="#loginModal" data-bs-toggle="modal" data-bs-dismiss="modal">Login</span>
                           </div>
 
-                          <!-- ERROR MESSAGE CODE -->
-                         
-                            <!-- ERROR MESSAGE CODE -->
                         </div>
                       </form>
                     </div>
