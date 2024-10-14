@@ -1,6 +1,4 @@
 <?php 
-
-
 // THIS IF STATEMENT CHECKS IF THE USER CLICKED ON THE SUBMIT BUTTON ON THE HTML FORM
 if ( $_SERVER["REQUEST_METHOD"] === "POST"){
     $username =  $_POST["username"];
@@ -31,9 +29,7 @@ if ( $_SERVER["REQUEST_METHOD"] === "POST"){
         $errors["login_incorrect"] = "incorrect login info";
     }
 
-
-    //WE REQUIRE THE CONFIG FILE TO MAKE USE OF THE SESSION START FUNCTION
-    
+    //WE REQUIRE THE CONFIG FILE TO MAKE USE OF THE SESSION START FUNCTION   
     require_once '../config_session.php';
 
     //FUNCTION TO HANDLE IF ERRORS ARE NOW SHOWN
@@ -47,13 +43,13 @@ if ( $_SERVER["REQUEST_METHOD"] === "POST"){
     // }
 
     // WE DONT KNOW YET
-    $newSessionId = session_create_id();
-    $sessionId = $newSessionId . "_" . $result["id"];
-    session_id($sessionId);
-    $_SESSION["user_id"] = $result["id"];
-    $_SESSION["user_username"] = htmlspecialchars($result["username"]) ;
-    $_SESSION["last_regeneration"] = time();
-    // header("Location:.../../index.php?login=success");
+    // $newSessionId = session_create_id();
+    // $sessionId = $newSessionId . "_" . $result["id"];
+    // session_id($sessionId);
+    // $_SESSION["user_id"] = $result["id"];
+    // $_SESSION["user_username"] = htmlspecialchars($result["username"]) ;
+    // $_SESSION["last_regeneration"] = time();
+    header("Location:../dashboard_folder/dashboard.php");
     $pdo = null;
     $stmt = null;
     die();

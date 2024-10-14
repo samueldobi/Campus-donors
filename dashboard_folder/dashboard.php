@@ -1,5 +1,6 @@
 <?php
-session_start();
+echo 'Current working directory: ' . getcwd();
+require_once '../includes/logout.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -32,8 +33,8 @@ session_start();
                       
                             <div class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="<?php echo htmlspecialchars($_SESSION['profile_picture']); ?>" alt="" class="rounded-circle" width="30" height="30">
-                                    Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?>
+                                    <img src="" alt="" class="rounded-circle" width="30" height="30">
+                                    Welcome User
                                 </a>
 
                             </div>
@@ -84,7 +85,9 @@ session_start();
             </div>
             <a href="#" class="nav_link">
                 <i class="bi bi-box-arrow-right"></i>
-                <span class="nav_name">SignOut</span>
+                <form action="includes/login_folder/logout.php" method="POST">
+                    <button class="nav_name" method = >Logout</button>
+                </form>
             </a>
         </nav>
     </div>
