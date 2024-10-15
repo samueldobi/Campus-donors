@@ -49,7 +49,7 @@ if ( $_SERVER["REQUEST_METHOD"] === "POST"){
     // $_SESSION["user_id"] = $result["id"];
     // $_SESSION["user_username"] = htmlspecialchars($result["username"]) ;
     // $_SESSION["last_regeneration"] = time();
-    header("Location:/blood-donation-application/includes/dashboard_folder/dashboard.php");
+    header("Location:/blood-donation-application/includes/dashboard_folder/dashboard.php?login=success");
     $pdo = null;
     $stmt = null;
     die();
