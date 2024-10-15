@@ -1,6 +1,7 @@
 <?php
 echo 'Current working directory: ' . getcwd();
-require_once '../includes/logout.php';
+require_once '../logout.php';
+// require_once '../login_folder/login_view.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -85,8 +86,8 @@ require_once '../includes/logout.php';
             </div>
             <a href="#" class="nav_link">
                 <i class="bi bi-box-arrow-right"></i>
-                <form action="includes/login_folder/logout.php" method="POST">
-                    <button class="nav_name" method = >Logout</button>
+                <form action="../login_folder/logout.php"  method="POST">
+                    <button class="nav_name"  name="executeFunction" >Logout</button>
                 </form>
             </a>
         </nav>
