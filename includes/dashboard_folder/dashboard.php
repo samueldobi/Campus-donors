@@ -88,12 +88,18 @@ require_once '../login_folder/login_view.inc.php';
                     </a> -->
                 </div>
             </div>
-            <a href="#" class="nav_link">
-                <i class="bi bi-box-arrow-right"></i>
-                <form action="../logout.php"  method="POST">
-                    <button class="logout-btn text-light"  name="executeFunction" >Logout</button>
-                </form>
-            </a>
+
+            <!-- Logout button div -->
+            <div class="d-flex justify-content-center align-self-center">
+
+                <p class="nav_link">
+                    <i class="bi bi-box-arrow-right text-light" ></i>
+                    <form action="../logout.php"  method="POST">
+                        <button class="logout-btn text-light"  name="executeFunction" >Logout</button>
+                    </form>
+                </p>
+            </div>
+            <!-- Logout button div -->
         </nav>
     </div>
     <!-- sidebar -->

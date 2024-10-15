@@ -115,7 +115,7 @@ i{
 }
 
 .nav_link {
-    position: relative;
+    /* position: relative; */
     color: var(--first-color-light);
     margin-bottom: 1.5rem;
     transition: .3s;
@@ -125,10 +125,11 @@ i{
     font-size: 1.25rem;
 }
 .logout-btn{
-    background: none;          /* Remove background */
-    border: none;              /* Remove border */
-    padding: 0;                /* Remove padding */
-    margin: 0;          
+    background: none;          
+    border: none;              
+    padding: 0;               
+    margin: 0;     
+    transform: translateY(20px);     
 }
 .show {
     left: 0;
