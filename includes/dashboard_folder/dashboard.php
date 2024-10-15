@@ -57,21 +57,21 @@ require_once '../login_folder/login_view.inc.php';
             <div>
                 <a href="index.php" class="nav_logo">
                     <i class='bx bx-layer'>
-                        <i class="bi bi-house-add text-light"></i>
+                        <i class="bi bi-house-add text-light" title="Home"></i>
                     </i>
                     <span class="nav_logo-name">  Campus Donors</span>
                 </a>
                 <div class="nav_list">
                     <a href="#" class="nav_link active" data-segment="profile">
-                        <i class="bi bi-person-circle"></i>
-                        <span class="nav_name" title="profile">Profile</span>
+                        <i class="bi bi-person-circle" title="profile"></i>
+                        <span class="nav_name" >Profile</span>
                     </a>
                     <a href="#" class="nav_link" data-segment="donation-history">
-                        <i class="bi bi-backpack3-fill"></i>
+                        <i class="bi bi-backpack3-fill" title="donation-history"></i>
                         <span class="nav_name">Donation History</span>
                     </a>
                     <a href="#" class="nav_link" data-segment="notifications">
-                        <i class="bi bi-bell"></i>
+                        <i class="bi bi-bell" title="notifications"></i>
                         <span class="nav_name">Notifications</span>
                     </a>
                     <!-- <a href="#" class="nav_link">
