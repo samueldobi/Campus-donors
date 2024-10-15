@@ -1,5 +1,7 @@
 <?php
+require_once '../config_session.php';
 require_once '../logout.php';
+require_once '../login_folder/login_view.inc.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,7 +35,11 @@ require_once '../logout.php';
                             <div class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <img src="" alt="" class="rounded-circle" width="30" height="30">
-                                    Welcome User
+                                    Welcome <span>
+                                    <?php
+                                        output_username();
+                                        ?>
+                                    </span>
                                 </a>
 
                             </div>
@@ -58,7 +64,7 @@ require_once '../logout.php';
                 <div class="nav_list">
                     <a href="#" class="nav_link active" data-segment="profile">
                         <i class="bi bi-person-circle"></i>
-                        <span class="nav_name">Profile</span>
+                        <span class="nav_name" title="profile">Profile</span>
                     </a>
                     <a href="#" class="nav_link" data-segment="donation-history">
                         <i class="bi bi-backpack3-fill"></i>
@@ -85,7 +91,7 @@ require_once '../logout.php';
             <a href="#" class="nav_link">
                 <i class="bi bi-box-arrow-right"></i>
                 <form action="../logout.php"  method="POST">
-                    <button class="nav_name"  name="executeFunction" >Logout</button>
+                    <button class="logout-btn text-light"  name="executeFunction" >Logout</button>
                 </form>
             </a>
         </nav>
@@ -116,6 +122,8 @@ require_once '../logout.php';
             
                 </div>
             </div>
+
+            
         <!-- Profile overview -->
 
         <!-- Donation History -->
