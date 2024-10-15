@@ -86,7 +86,7 @@ require_once '../logout.php';
             </div>
             <a href="#" class="nav_link">
                 <i class="bi bi-box-arrow-right"></i>
-                <form action="../login_folder/logout.php"  method="POST">
+                <form action="../logout.php"  method="POST">
                     <button class="nav_name"  name="executeFunction" >Logout</button>
                 </form>
             </a>
