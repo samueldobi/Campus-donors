@@ -53,20 +53,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $bloodtype = $_POST['bloodtype'];
     $faculty = $_POST['faculty'] ?? ''; // The null coalescing operator provides a default value if the key does not exist
 
+    require_once 'includes/dbh.inc.php';
 
-        echo 'hello';
-
-    try {
-        require_once 'includes/dbh.inc.php';
+    // FUNCTION TO INSERT DONOR DATA INTO THE DATABASE
+    function get_donor($pdo, $name ,$email, $bloodtype, $faculty){
 
         // Check if bloodtype is not empty
-        if (!empty($bloodtype)) {
-            // Prepare the SQL statement with placeholders
-            $sql = "INSERT INTO donor (name, email, bloodtype, faculty) VALUES (:name, :email, :bloodtype, :faculty)";
-            
+        if (empty($bloodtype) || filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
+           echo 'fill all inputs correctly ';
+            return;
+        } 
+
+         // Prepare the SQL statement with placeholders
+         $query = "INSERT INTO donor (name, email, bloodtype, faculty) VALUES (:name, :email, :bloodtype, :faculty)";
+        // TRY STATEMENT
+        try {   
+
             // Prepare the statement
-            $stmt = $pdo->prepare($sql);
-            
+            $stmt = $pdo->prepare($query);
             // Bind parameters
             $stmt->bindParam(':name', $name);
             $stmt->bindParam(':email', $email);
@@ -74,8 +78,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $stmt->bindParam(':faculty', $faculty);
             
             // Execute the statement
-            $stmt->execute();
-                        if ($stmt->execute()) {
+            // $stmt->execute();
+            if ($stmt->execute()) {
                 echo "<h4 >Thank you, $name! We have received your information and will get back to you shortly.</h4><br>
                 <a href = index.php style = text-align:center;> Go back to Home Page</a>
                 ";
@@ -83,9 +87,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 echo "There was an error processing your request. Please try again.";
             }
         }
-    } catch (PDOException $e) {
+     catch (PDOException $e) {
         die("Connection failed: " . $e->getMessage() . " (Error code: " . $e->getCode() . ")");
     }
+    }
+
+
+    // CALL THE GET DONOR FUNCTION
+    get_donor($pdo, $name, $email, $bloodtype, $faculty);
 }
 
     // PHP MAILER CODE
