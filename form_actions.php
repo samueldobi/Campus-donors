@@ -11,8 +11,6 @@
         font-size: 15px;
         padding: 20px;
         margin: 20px;
-        /* text-align: center; */
-        /* margin-left: 50vw; */
     }
 </style>
 <?php 
@@ -29,29 +27,19 @@
 // $mail = new PHPMailer(true);
 
 
-// // DATABASE INITIALIZATION
-//  $host = 'localhost';
-//  $user = 'iyke';
-//  $password = "Madeofsteel";
-//  $dbname = 'blood_donation_app';
-
-//  //Set DSN
-//  $dsn = 'mysql:host='. $host .';dbname='. $dbname;
-
-// // Create a PDO instance
-// $pdo = new PDO($dsn, $user, $password);
-// $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
-// $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
-
-
 
 // Check if the form was submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Collect the form data
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $bloodtype = $_POST['bloodtype'];
-    $faculty = $_POST['faculty'] ?? ''; // The null coalescing operator provides a default value if the key does not exist
+    // // Collect the form data
+    // $name = $_POST['name'];
+    // $email = $_POST['email'];
+    // $bloodtype = $_POST['bloodtype'];
+    // $faculty = $_POST['faculty'] ?? ''; // The null coalescing operator provides a default value if the key does not exist
+    // Collect the form data and sanitize it using htmlspecialchars
+    $name = htmlspecialchars($_POST['name'], ENT_QUOTES, 'UTF-8');
+    $email = htmlspecialchars($_POST['email'], ENT_QUOTES, 'UTF-8');
+    $bloodtype = htmlspecialchars($_POST['bloodtype'], ENT_QUOTES, 'UTF-8');
+    $faculty = htmlspecialchars($_POST['faculty'] ?? '', ENT_QUOTES, 'UTF-8'); // The null coalescing operator provides a default value if the key does not exist
 
     require_once 'includes/dbh.inc.php';
 
