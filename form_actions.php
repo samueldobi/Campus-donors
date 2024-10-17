@@ -128,40 +128,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 
-    // $name = htmlspecialchars($name);
-    // $email = htmlspecialchars($email);
-    // $bloodtype = htmlspecialchars($bloodtype);
-    // $faculty = htmlspecialchars($faculty);
-
-    // if (!empty($bloodtype)) {
-    //     // Prepare the SQL statement with placeholders
-    //     $sql = "INSERT INTO donor (name, email, bloodtype, faculty) VALUES (:name, :email, :bloodtype, :faculty)";
-        
-    //     try {
-    //         // Prepare the statement
-    //         $stmt = $pdo->prepare($sql);
-            
-    //         // Bind the parameters to the statement
-    //         $stmt->bindParam(':name', $name);
-    //         $stmt->bindParam(':email', $email);
-    //         $stmt->bindParam(':bloodtype', $bloodtype);
-    //         $stmt->bindParam(':faculty', $faculty);
-            
-    //         // Execute the statement
-    //         if ($stmt->execute()) {
-    //             echo "<h4 >Thank you, $name! We have received your information and will get back to you shortly.</h4><br>
-    //             <a href = index.php style = text-align:center;> Go back to Home Page</a>
-    //             ";
-    //         } else {
-    //             echo "There was an error processing your request. Please try again.";
-    //         }
-    //     } catch (PDOException $e) {
-    //         echo 'Error: ' . $e->getMessage();
-    //     }
-    // } else {
-    //     echo "Please select your blood type.";
-    // }
-
+   
 
 
 
