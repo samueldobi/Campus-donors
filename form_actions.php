@@ -8,9 +8,10 @@
         font-size: 30px;
     }
     a{
-        font-size: 15px;
+        font-size: 20px;
         padding: 20px;
         margin: 20px;
+        text-align: center;
     }
 </style>
 <?php 
@@ -69,7 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // $stmt->execute();
             if ($stmt->execute()) {
                 echo "<h4 >Thank you, $name! We have received your information and will get back to you shortly.</h4><br>
-                <a href = index.php style = text-align:center;> Go back to Home Page</a>
+                <a href = index.php > Go back to Home Page</a>
                 ";
             } else {
                 echo "There was an error processing your request. Please try again.";
@@ -85,7 +86,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     get_donor($pdo, $name, $email, $bloodtype, $faculty);
 }
 
-    // PHP MAILER CODE
+    // PHP MAILER FUNCTION
         //Server settings
         // $mail->isSMTP();                                            //Send using SMTP
         // $mail->Host       = '';                     //Set the SMTP server to send through
@@ -105,20 +106,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // $mail->Body    = 'A new form has been submitted at Campus Donors</b>';
     
         // $mail->send();
-         // PHP MAILER CODE END
-
-        
-
-    // Sanitize the data (important for security)
-
-
-
-
-
-
-   
-
-
+         // PHP MAILER FUNCTION END
 
 ?>
 
