@@ -39,6 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     require_once 'includes/dbh.inc.php';
 
+
     // FUNCTION TO INSERT DONOR DATA INTO THE DATABASE
     function get_donor($pdo, $name ,$email, $bloodtype, $faculty){
 
@@ -65,6 +66,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 echo "<h4 >Thank you, $name! We have received your information and will get back to you shortly.</h4><br>
                 <a href = index.php > Go back to Home Page</a>
                 ";
+                
             } else {
                 echo "There was an error processing your request. Please try again.";
             }
@@ -77,7 +79,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // CALL THE GET DONOR FUNCTION
     get_donor($pdo, $name, $email, $bloodtype, $faculty);
+
+    // RETRIEVE THE DEFAULT PROFILE PICTURE
+    function get_profile_picture(){
+        echo 'hello';
+    }
 }
+
+
 
     // PHP MAILER FUNCTION
         //Server settings

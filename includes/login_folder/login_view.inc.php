@@ -27,3 +27,8 @@ function check_login_errors(){
         // echo $_SESSION["user_username"];
     }
 }
+function output_id(){
+    if (isset($_SESSION["user_id"])){
+        echo $_SESSION["user_id"];
+    }
+}

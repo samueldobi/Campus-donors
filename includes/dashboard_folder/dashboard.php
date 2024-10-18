@@ -1,7 +1,9 @@
 <?php
 require_once '../config_session.php';
+// require_once 'dashboard_functions.php';
 require_once '../logout.php';
 require_once '../login_folder/login_view.inc.php';
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -60,7 +62,7 @@ require_once '../login_folder/login_view.inc.php';
     <div class=" side-bar l-navbar" id="navbar">
         <nav class="nav">
             <div>
-                <a href="index.php" class="nav_logo">
+                <a href="../../index.php" class="nav_logo">
                     <i class='bx bx-layer'>
                         <i class="bi bi-house-add text-light" title="Home"></i>
                     </i>
@@ -119,6 +121,10 @@ require_once '../login_folder/login_view.inc.php';
                          
                                 <p class="p-2 ">Total Donations:</p>
                                 <p class="">0</p>
+                                <?php
+                                // output_id();
+                                // display_name();
+                                ?>
                         </div>
                     <div class="col-10 col-md-3 rounded border dashcard-two text-center fw-bold fs-3 mt-5 mb-5">
                        
@@ -150,6 +156,11 @@ require_once '../login_folder/login_view.inc.php';
     </section>
 
     <!--Container Main end-->
+
+    <form action="upload_profile_picture.php" method="post" enctype="multipart/form-data">
+    <input type="file" name="profile_picture" accept="image/*">
+    <input type="submit" name="submit" value="Upload">
+    </form>
     </body>
  </section>
 
