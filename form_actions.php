@@ -31,11 +31,6 @@
 
 // Check if the form was submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // // Collect the form data
-    // $name = $_POST['name'];
-    // $email = $_POST['email'];
-    // $bloodtype = $_POST['bloodtype'];
-    // $faculty = $_POST['faculty'] ?? ''; // The null coalescing operator provides a default value if the key does not exist
     // Collect the form data and sanitize it using htmlspecialchars
     $name = htmlspecialchars($_POST['name'], ENT_QUOTES, 'UTF-8');
     $email = htmlspecialchars($_POST['email'], ENT_QUOTES, 'UTF-8');
@@ -57,7 +52,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
          $query = "INSERT INTO donor (name, email, bloodtype, faculty) VALUES (:name, :email, :bloodtype, :faculty)";
         // TRY STATEMENT
         try {   
-
             // Prepare the statement
             $stmt = $pdo->prepare($query);
             // Bind parameters
@@ -67,7 +61,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $stmt->bindParam(':faculty', $faculty);
             
             // Execute the statement
-            // $stmt->execute();
             if ($stmt->execute()) {
                 echo "<h4 >Thank you, $name! We have received your information and will get back to you shortly.</h4><br>
                 <a href = index.php > Go back to Home Page</a>
