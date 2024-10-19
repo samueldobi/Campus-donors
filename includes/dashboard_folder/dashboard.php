@@ -36,7 +36,7 @@ require_once '../login_folder/login_view.inc.php';
                       
                             <div class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="" alt="" class="rounded-circle" width="30" height="30">
+                                <img src="../../assets/images/defaultpic.png" alt="Profile Pic" class="img-thumbnail" width="45">
                                     Welcome <span>
                                     <?php
                                         output_username();
@@ -44,11 +44,11 @@ require_once '../login_folder/login_view.inc.php';
                                     </span>
                                     
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Change Profile Pic</a></li>
+                                <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#" >Change Profile Pic</a></li>
                                     <li><a class="dropdown-item" href="#">Remove Profile Pic</a></li>
-                                </ul>
-
+                                </ul> -->
+                        
                             </div>
                  
                     </div>
@@ -81,11 +81,15 @@ require_once '../login_folder/login_view.inc.php';
                         <i class="bi bi-bell" title="notifications"></i>
                         <span class="nav_name">Notifications</span>
                     </a>
-                    <!-- <a href="#" class="nav_link">
-                        <i class='bx bx-bookmark nav_icon'></i>
-                        <span class="nav_name">Bookmark</span>
+                    <a href="#" class="nav_link" data-segment="changeprofile">
+                        <i class="bi bi-bell" title="notifications"></i>
+                        <span class="nav_name">Change Profile Pic</span>
                     </a>
-                    <a href="#" class="nav_link">
+                  <a href="#" class="nav_link">
+                        <i class='bx bx-bookmark nav_icon'></i>
+                        <span class="nav_name"></span>
+                    </a>
+                   <!--    <a href="#" class="nav_link">
                         <i class='bx bx-folder nav_icon'></i>
                         <span class="nav_name">Files</span>
                     </a>
@@ -153,16 +157,24 @@ require_once '../login_folder/login_view.inc.php';
               <p>Notifications</p>
           </div>
          <!-- Notifications -->
+         <!-- Change profile picture -->
+          <div id="changeprofile" class="segment">
+              <p>Upload A New Profile Picture</p>
+
+             <form action="upload_profile_picture.php" method="post" enctype="multipart/form-data">
+                <input type="file" name="profile_picture" accept="image/*">
+                <input type="submit" name="submit" value="Upload">
+            </form> 
+          </div>
+         <!-- Change profile picture  -->
     </section>
 
     <!--Container Main end-->
 
-    <form action="upload_profile_picture.php" method="post" enctype="multipart/form-data">
-    <input type="file" name="profile_picture" accept="image/*">
-    <input type="submit" name="submit" value="Upload">
-    </form>
+
     </body>
  </section>
+
 
  <script src="dashboard.js"></script>
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
