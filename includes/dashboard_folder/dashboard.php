@@ -1,6 +1,6 @@
 <?php
 require_once '../config_session.php';
-// require_once 'dashboard_functions.php';
+require_once 'dashboard_functions.php';
 require_once '../logout.php';
 require_once '../login_folder/login_view.inc.php';
 
@@ -36,7 +36,8 @@ require_once '../login_folder/login_view.inc.php';
                       
                             <div class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="../../assets/images/defaultpic.png" alt="Profile Pic" class="img-thumbnail" width="45">
+                                <img src="uploads/<?php echo htmlspecialchars($user['profile_picture']); ?>" alt="Profile Picture">
+                                <!-- <img src="../../assets/images/defaultpic.png" alt="Profile Pic" class="img-thumbnail" width="45"> -->
                                     Welcome <span>
                                     <?php
                                         output_username();
@@ -161,7 +162,7 @@ require_once '../login_folder/login_view.inc.php';
           <div id="changeprofile" class="segment">
               <p>Upload A New Profile Picture</p>
 
-             <form action="upload_profile_picture.php" method="post" enctype="multipart/form-data">
+             <form action="dashboard_functions.php" method="post" enctype="multipart/form-data">
                 <input type="file" name="profile_picture" accept="image/*">
                 <input type="submit" name="submit" value="Upload">
             </form> 
