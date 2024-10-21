@@ -4,7 +4,9 @@ require_once '../config_session.php';
 require_once '../dbh.inc.php';
 
     
-
+if (!isset($_SESSION["user_id"])){
+    header("Location:../../index.php");
+}
     
 function uploadProfilePicture($pdo, $userId) {
     if (!isset($_FILES['profile_picture'])) {
@@ -51,7 +53,7 @@ try {
     $userId = $_SESSION['user_id'];
     
     $fileName = uploadProfilePicture($pdo, $userId);
-    echo "Profile picture updated successfully!";
+    // echo "Profile picture updated successfully!";
     
 } catch (Exception $e) {
     echo "Error: " . $e->getMessage();
