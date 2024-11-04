@@ -59,22 +59,5 @@ try {
     echo "Error: " . $e->getMessage();
 }
 
-// $user_id = $_SESSION["user_id"];
-
-// try {
-//     $stmt = $pdo->prepare('SELECT profile_picture FROM users WHERE id = :id');
-//     $stmt->execute(['id' => $user_id]);
-//     $user = $stmt->fetch();
-
-//     if ($user) {
-//         $profile_picture = $user['profile_picture'];
-//     } else {
-//         // Handle the case where the user is not found
-//         $profile_picture = 'path/to/default/profile_picture.jpg';
-//     }
-// } catch (PDOException $e) {
-//     echo 'Query failed: ' . $e->getMessage();
-// }
-
 
 
