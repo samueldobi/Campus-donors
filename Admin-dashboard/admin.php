@@ -1,6 +1,4 @@
-<?php
-include 'adminn_view.php';
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -492,10 +490,10 @@ include 'adminn_view.php';
                                 <div class="card-body">
                                     <div class="chart-area">
                                         <!-- <canvas id="myAreaChart"></canvas> -->
-                                         <p>test code</p>
-                                         <?php
-                                        displayDonors($stmt);                                     
-                                         ?>
+                                         <!-- <p>test code</p> -->
+                                        <?php
+                                        include 'admin_view.php';
+                                        ?>                                    
                                     </div>
                                 </div>
                             </div>
