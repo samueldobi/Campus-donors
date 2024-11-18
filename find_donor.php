@@ -13,7 +13,7 @@
         <h3 class=" text-md-center p-2 mt-2 mb-3">Register Your Details</h3>
         <div class="border rounded  col-10 col-md-6 align-items-center justify-content-center">
 
-            <form  action = "form_actions.php"  class="" method="POST">
+            <form  action = "form_actions_recieve.php"  class="" method="POST">
 
             <!-- Name Label -->
                 <div class="m-3">
