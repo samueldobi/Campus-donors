@@ -8,14 +8,15 @@ try{
     function displayDonors($stmt){
         // Check if there are any users
         if ($stmt->rowCount() > 0) {
-            echo "<h2>Donor List</h2>";
-            echo "<ul>";
+            // echo "<h2 style = 'color:#0d6efd;'>Donor List</h2>";
+            echo "<ul >";
             
             // Fetch all users and display them
             while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-                echo "<li>";
+                echo "<li style='color: #0d6efd; background-color: #f4f4f4; padding: 10px; margin-bottom: 5px;' >";
                 echo "Name: " . htmlspecialchars($row['name']) . " | ";
                 echo "Email: " . htmlspecialchars($row['email']);
+                echo "Email: " . htmlspecialchars($row['bloodtype']);
                 echo "</li>";
             }
             
@@ -24,6 +25,8 @@ try{
             echo "<p>No users found.</p>";
         } 
     }
+    // Function to display recipients
+    // function displayRecipients
 
     // Call the function to display donors
     $donorlist = displayDonors($stmt);

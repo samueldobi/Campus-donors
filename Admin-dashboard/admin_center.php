@@ -1,13 +1,36 @@
 <?php
-declare(strict_types=1);
-require_once '../dbh.inc.php';
+try{
+    require_once '../includes/dbh.inc.php';
 
-function getDonors(object $pdo, string $name){
-    $query = "SELECT name FROM donors WHERE name:=name;  ";
-    $stmt = $pdo ->prepare($query);
-    $stmt -> bindParam(":name", $name);
-    $stmt -> execute();
-    $result =  $stmt -> fetch(PDO::FETCH_ASSOC);
-    return $result;
+    $stmt = $pdo->prepare("SELECT name, email, bloodtype FROM recipients; ");
+    $stmt->execute();
+
+    function displayRecipients($stmt){
+        // Check if there are any users
+        if ($stmt->rowCount() > 0) {
+            // echo "<h2 style = 'color:#0d6efd;'>Donor List</h2>";
+            echo "<ul >";
+            
+            // Fetch all users and display them
+            while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                echo "<li style='color: #0d6efd; background-color: #f4f4f4; padding: 10px; margin-bottom: 5px;' >";
+                echo "Name: " . htmlspecialchars($row['name']) . " | ";
+                echo "Email: " . htmlspecialchars($row['email']);
+                echo "Email: " . htmlspecialchars($row['bloodtype']);
+                echo "</li>";
+            }
+            
+            echo "</ul>";
+        } else {
+            echo "<p>No users found.</p>";
+        } 
+    }
+
+    // Call the function to display donors
+    $recipientList = displayRecipients($stmt);
+    echo $recipientList ;
+}    catch (PDOException $e) {
+    die("Connection failed: " . $e->getMessage() . " (Error code: " . $e->getCode() . ")");
 }
+    $pdo = null;
 ?>
