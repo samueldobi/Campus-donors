@@ -8,6 +8,7 @@ try{
     $stmt->execute();
     $recStmt->execute();
 
+
     function displayDonors($stmt){
         // Check if there are any users
         if ($stmt->rowCount() > 0) {
@@ -49,6 +50,8 @@ try{
             echo "<p>No users found.</p>";
         } 
     }
+
+    function adminName(){}
 }    catch (PDOException $e) {
     die("Connection failed: " . $e->getMessage() . " (Error code: " . $e->getCode() . ")");
 }

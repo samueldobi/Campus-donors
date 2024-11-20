@@ -3,7 +3,6 @@
 if($_SERVER["REQUEST_METHOD"] == "POST"){
     try{
         require_once '../includes/dbh.inc.php';
-
     header("Location:admin.php");
 
     }catch (PDOException $e) {

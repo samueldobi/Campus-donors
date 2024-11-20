@@ -4,8 +4,6 @@ try{
 
 
     function countDonors(){
-        // require_once '../includes/dbh.inc.php';
-        // $pdo = new PDO('mysql:host=localhost;dbname=blood_donation_app', $dbusername, $dbpassword);
         $pdo = Database::getConnection();
         $stmt = $pdo->prepare("SELECT COUNT(*) FROM donor");
         $stmt->execute();
@@ -13,13 +11,6 @@ try{
         echo  $count;
     }
     function countRecipients(){
-        // require_once '../includes/dbh.inc.php';
-        // $pdo = new PDO('mysql:host=localhost;dbname=blood_donation_app', $dbusername, $dbpassword);
-        // $stmt = $pdo->prepare("SELECT COUNT(*) FROM recipients");
-        // $stmt->execute();
-        // $count = $stmt->fetchColumn();
-        // echo  $count;
-        // echo 'testing';
         $pdo = Database::getConnection();
         $stmt = $pdo->prepare("SELECT COUNT(*) FROM recipients");
         $stmt->execute();
@@ -51,6 +42,8 @@ try{
         $total = $donorCount + $recCount;
         echo $total;
     }
+
+
     }
 
    catch (PDOException $e) {

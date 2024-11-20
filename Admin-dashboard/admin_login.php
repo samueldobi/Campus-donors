@@ -12,7 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../assets/style.css">
- 
+  
     
 </head>
 <body>
@@ -39,12 +39,13 @@
     <h2 class=" text-center m-2 p-2 ">Admin Login</h2>
 
     <div class=" col-6 border rounded mx-auto">
-    <form  action = "admin_login_Control.php"  class="" method="POST">
+
+    <form  action = "admin_view.php"  class="" method="POST">
 
 <!-- Name Label -->
     <div class="m-3">
         <label for="name" class="form-label fw-bold">Name</label>
-        <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="name">
+        <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="username">
     </div>
 <!-- Name Label -->
 
@@ -58,7 +59,7 @@
 <!-- Password Input -->
 <div class="m-3">
     <label for="exampleInputEmail1" class="form-label fw-bold">Password</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+    <input type="password" class="form-control" id="" aria-describedby="emailHelp" name="pwd">
     <div id="emailHelp" class="form-text">Type in your password here</div>
 </div>
 <!-- Password Input -->
