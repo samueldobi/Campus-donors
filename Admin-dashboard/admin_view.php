@@ -1,7 +1,8 @@
 <?php
-try{
     require_once '../includes/dbh.inc.php';
+try{
 
+    $pdo = Database::getConnection();
     $stmt = $pdo->prepare("SELECT name, email, bloodtype FROM donor; ");
     $stmt->execute();
 

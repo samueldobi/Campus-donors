@@ -9,12 +9,12 @@ try{
     function displayRecipients($stmt){
         // Check if there are any users
         if ($stmt->rowCount() > 0) {
-            // echo "<h2 style = 'color:#0d6efd;'>Reciipent  List</h2>";
+            // echo "<h2 style = 'color:#0d6efd;'>Recipient  List</h2>";
             echo "<ul >";
             
             // Fetch all users and display them
             while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-                echo "<li style='color: #0d6efd; background-color: #f4f4f4; padding: 10px; margin-bottom: 5px;' >";
+                echo "<li style='color: #dc3545; background-color: #f4f4f4; padding: 10px; margin-bottom: 5px;' >";
                 echo "Name: " . htmlspecialchars($row['name']) . " | ";
                 echo "Email: " . htmlspecialchars($row['email']);
                 echo "Email: " . htmlspecialchars($row['bloodtype']);
