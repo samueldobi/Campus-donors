@@ -2,7 +2,7 @@
 
 $host = 'localhost';
 $dbname = 'blood_donation_App';
-$dbusername = 'iyke';
+$dbusername = 'root';
 $dbpassword = ''; // Add your password here if required
 
 try {
