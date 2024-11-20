@@ -75,10 +75,12 @@ require 'admin_login_control.php';
                     <span>Donor List </span>
                 </a>
             </li>
+
+      
             <li class="nav-item">
-                <a class="nav-link " href="#" >
+                <a class="nav-link " href="../index.php" >
                     <i class="fas fa-fw fa-cog"></i>
-                    <span>Recipient List  </span>
+                    <span>Logout</span>
                 </a>
             </li>
 
@@ -334,9 +336,7 @@ require 'admin_login_control.php';
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">
-                                    <?php
-                                    adminName();
-                                    ?>
+                                    welcome iyke
                                 </span>
                                 <!-- <img class="img-profile rounded-circle"
                                     src="img/undraw_profile.svg"> -->
@@ -751,7 +751,7 @@ require 'admin_login_control.php';
     </a>
 
     <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    <!-- <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -768,7 +768,7 @@ require 'admin_login_control.php';
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>

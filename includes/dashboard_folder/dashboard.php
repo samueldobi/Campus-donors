@@ -36,7 +36,7 @@ require_once '../login_folder/login_view.inc.php';
                       
                             <div class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="uploads/<?php echo htmlspecialchars($user['profile_picture']); ?>" alt="Profile Picture">
+                                <img src="uploads/<?php echo htmlspecialchars($user['profile_picture']); ?>" alt="">
                                 <!-- <img src="../../assets/images/defaultpic.png" alt="Profile Pic" class="img-thumbnail" width="45"> -->
                                     Welcome <span>
                                     <?php
@@ -138,7 +138,7 @@ require_once '../login_folder/login_view.inc.php';
                         </div>
                     <div class="col-10 col-md-3 rounded border dashcard-three text-center fw-bold fs-3 mt-5 mb-5">
 
-                                <p class="p-2">Total Donations:</p>
+                                <p class="p-2">Pending Requests</p>
                                 <p>0</p>
                         </div>
             

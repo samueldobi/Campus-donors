@@ -47,7 +47,7 @@ function uploadProfilePicture($pdo, $userId) {
     return $fileName;
 }
 
-// Rest of your code remains the same
+// Rest of the code remains the same
 
 try {
     // Assume user ID is stored in session after login
