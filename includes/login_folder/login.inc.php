@@ -9,6 +9,7 @@ if ( $_SERVER["REQUEST_METHOD"] === "POST"){
         require_once '../dbh.inc.php';
         require_once 'login_model.inc.php';
         require_once 'login_control.inc.php';
+        $pdo = Database::getConnection();
 
     // ERROR HANDLERS
     $errors = [];

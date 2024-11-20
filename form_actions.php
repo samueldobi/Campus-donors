@@ -38,6 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $faculty = htmlspecialchars($_POST['faculty'] ?? '', ENT_QUOTES, 'UTF-8'); // The null coalescing operator provides a default value if the key does not exist
 
     require_once 'includes/dbh.inc.php';
+    $pdo = Database::getConnection();
 
 
     // FUNCTION TO INSERT DONOR DATA INTO THE DATABASE

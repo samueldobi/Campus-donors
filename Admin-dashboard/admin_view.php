@@ -4,7 +4,9 @@ try{
 
     $pdo = Database::getConnection();
     $stmt = $pdo->prepare("SELECT name, email, bloodtype FROM donor; ");
+    $recStmt = $pdo->prepare("SELECT name, email, bloodtype FROM recipients; ");
     $stmt->execute();
+    $recStmt->execute();
 
     function displayDonors($stmt){
         // Check if there are any users
@@ -26,12 +28,27 @@ try{
             echo "<p>No users found.</p>";
         } 
     }
-    // Function to display recipients
-    // function displayRecipients
 
-    // Call the function to display donors
-    $donorlist = displayDonors($stmt);
-    echo $donorlist ;
+    // Display Recipients
+    function displayRecipients($recStmt){
+        // Check if there are any users
+        if ($recStmt->rowCount() > 0) {
+            echo "<ul >";
+            
+            // Fetch all users and display them
+            while ($row = $recStmt->fetch(PDO::FETCH_ASSOC)) {
+                echo "<li style='color: #dc3545; background-color: #f4f4f4; padding: 10px; margin-bottom: 5px;' >";
+                echo "Name: " . htmlspecialchars($row['name']) . " | ";
+                echo "Email: " . htmlspecialchars($row['email']);
+                echo "Email: " . htmlspecialchars($row['bloodtype']);
+                echo "</li>";
+            }
+            
+            echo "</ul>";
+        } else {
+            echo "<p>No users found.</p>";
+        } 
+    }
 }    catch (PDOException $e) {
     die("Connection failed: " . $e->getMessage() . " (Error code: " . $e->getCode() . ")");
 }

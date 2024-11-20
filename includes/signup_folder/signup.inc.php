@@ -14,6 +14,7 @@ if ( $_SERVER["REQUEST_METHOD"] === "POST"){
     require_once '../dbh.inc.php';
     require_once 'signup_model.inc.php';
     require_once 'signup_control.inc.php';
+    $pdo = Database::getConnection();
 
     // ERROR HANDLERS
     $errors = [];

@@ -507,7 +507,7 @@ require 'admin_view.php'
                                         <!-- <canvas id="myAreaChart"></canvas> -->
                                          <!-- <p>test code</p> -->
                                         <?php
-                                        include 'admin_view.php';
+                                        displayDonors($stmt);
                                         ?>                                    
                                     </div>
                                 </div>
@@ -539,7 +539,7 @@ require 'admin_view.php'
                                 <!-- Card Body -->
                                 <div class="card-body">
                                 <?php
-                                        include 'admin_center.php';
+                                        displayRecipients($stmt);
                                 ?> 
                                     <div class="mt-4 text-center small">
                                         <span class="mr-2">

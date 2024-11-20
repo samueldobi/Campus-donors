@@ -2,6 +2,7 @@
 
 require_once '../config_session.php';
 require_once '../dbh.inc.php';
+$pdo = Database::getConnection();
 
     
 if (!isset($_SESSION["user_id"])){
