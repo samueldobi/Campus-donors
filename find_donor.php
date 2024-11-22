@@ -28,6 +28,14 @@
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
                 <div id="emailHelp" class="form-text">Your Email is safe</div>
             </div>
+            <!-- Phone number input -->
+            <div class="m-3">
+                <label for="exampleInputEmail1" class="form-label fw-bold">Phone number</label>
+                <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="num">
+                <div id="emailHelp" class="form-text">Put your phone number</div>
+            </div>
+            <!-- Phone number input -->
+
             <!-- Email Input -->
              
              <!-- Blood Type Input -->

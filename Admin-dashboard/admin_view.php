@@ -3,8 +3,8 @@
 try{
 
     $pdo = Database::getConnection();
-    $stmt = $pdo->prepare("SELECT name, email, bloodtype FROM donor; ");
-    $recStmt = $pdo->prepare("SELECT name, email, bloodtype FROM recipients; ");
+    $stmt = $pdo->prepare("SELECT name, email, bloodtype , num FROM donor; ");
+    $recStmt = $pdo->prepare("SELECT name, email, bloodtype, num FROM recipients; ");
     $stmt->execute();
     $recStmt->execute();
 
@@ -21,6 +21,7 @@ try{
                 echo "Name: " . htmlspecialchars($row['name']) . " | ";
                 echo "Email: " . htmlspecialchars($row['email']);
                 echo "Email: " . htmlspecialchars($row['bloodtype']);
+                echo "Number: " . htmlspecialchars($row['num']);
                 echo "</li>";
             }
             
@@ -42,6 +43,7 @@ try{
                 echo "Name: " . htmlspecialchars($row['name']) . " | ";
                 echo "Email: " . htmlspecialchars($row['email']);
                 echo "Email: " . htmlspecialchars($row['bloodtype']);
+                echo "Number: " . htmlspecialchars($row['num']);
                 echo "</li>";
             }
             

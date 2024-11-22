@@ -23,6 +23,14 @@
                 </div>
             <!-- Name Label -->
 
+            <!-- Phone number -->
+            <div class="m-3">
+                <label for="exampleInputEmail1" class="form-label fw-bold">Phone number</label>
+                <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="num">
+                <div id="emailHelp" class="form-text">Put your phone number</div>
+            </div>
+             <!-- Phone number -->
+
             <!-- Email Input -->
             <div class="m-3">
                 <label for="exampleInputEmail1" class="form-label fw-bold">Email address</label>

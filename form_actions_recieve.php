@@ -35,6 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = htmlspecialchars($_POST['name'], ENT_QUOTES, 'UTF-8');
     $email = htmlspecialchars($_POST['email'], ENT_QUOTES, 'UTF-8');
     $bloodtype = htmlspecialchars($_POST['bloodtype'], ENT_QUOTES, 'UTF-8');
+    $num = htmlspecialchars($_POST['num']?? '', ENT_QUOTES, 'UTF-8');
     $faculty = htmlspecialchars($_POST['faculty'] ?? '', ENT_QUOTES, 'UTF-8'); // The null coalescing operator provides a default value if the key does not exist
 
     require_once 'includes/dbh.inc.php';
@@ -42,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     // FUNCTION TO INSERT DONOR DATA INTO THE DATABASE
-    function get_donor($pdo, $name ,$email, $bloodtype, $faculty){
+    function get_donor($pdo, $name ,$email, $bloodtype, $faculty, $num){
 
         // Check if bloodtype is not empty
         if (empty($bloodtype) || filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
@@ -51,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         } 
 
          // Prepare the SQL statement with placeholders
-         $query = "INSERT INTO recipients (name, email, bloodtype, faculty) VALUES (:name, :email, :bloodtype, :faculty)";
+         $query = "INSERT INTO recipients (name, email, bloodtype, faculty, num) VALUES (:name, :email, :bloodtype, :faculty, :num)";
         // TRY STATEMENT
         try {   
             // Prepare the statement
@@ -61,6 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $stmt->bindParam(':email', $email);
             $stmt->bindParam(':bloodtype', $bloodtype);
             $stmt->bindParam(':faculty', $faculty);
+            $stmt->bindParam(':num', $num);
             
             // Execute the statement
             if ($stmt->execute()) {
@@ -79,7 +81,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     // CALL THE GET DONOR FUNCTION
-    get_donor($pdo, $name, $email, $bloodtype, $faculty);
+    get_donor($pdo, $name, $email, $bloodtype, $faculty, $num);
 
     // RETRIEVE THE DEFAULT PROFILE PICTURE
     function get_profile_picture(){

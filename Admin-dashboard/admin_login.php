@@ -40,7 +40,7 @@
 
     <div class=" col-6 border rounded mx-auto">
 
-    <form  action = "admin_view.php"  class="" method="POST">
+    <form  action = "admin_login_control.php"  class="" method="POST">
 
 <!-- Name Label -->
     <div class="m-3">
@@ -69,7 +69,6 @@
 
     <div class=" button-links p-2">
         <button type="submit" class="btn text-light  btn-style fs-5" style="width: 100%;">Login</button>
-
     </div>
 
 </form>
