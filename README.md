@@ -37,7 +37,7 @@ To provide a reliable, student-focused platform that:
 
 ## 📸 Screenshots
 
-<img width="1339" height="524" alt="Image" src="https://github.com/user-attachments/assets/3ce189a5-3949-4d61-b3bb-1354ccd68c5a" />
+
 
 <img width="1338" height="547" alt="Image" src="https://github.com/user-attachments/assets/2183fee0-2098-4441-ab9a-b6586ee346af" />
 
@@ -52,8 +52,3 @@ To provide a reliable, student-focused platform that:
 <img width="1324" height="287" alt="campus-5" src="https://github.com/user-attachments/assets/87e4c124-4962-4df7-9ab1-301205e99110" />
 
 
-<img width="838" height="453" alt="campus-login" src="https://github.com/user-attachments/assets/370c2b66-f263-4a12-9960-ae27bae201d6" />
-
-<img width="1210" height="356" alt="campus-2" src="https://github.com/user-attachments/assets/238622f0-33ac-452e-b6e8-895ff1ff3423" />
-
-<img width="723" height="333" alt="campus-4" src="https://github.com/user-attachments/assets/2f596859-2a66-468f-93bf-8e270ba06898" />
