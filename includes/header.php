@@ -17,141 +17,133 @@ require_once 'login_folder/login_view.inc.php'
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./assets/style.css">
+
+    
  
     
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light  p-2">
-      <div class="container-fluid">
-        <a class="navbar-brand text-light fw-bold" href="index.php">Campus Donors</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class=" collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ms-auto ">
-            <li class="nav-item">
-              <a class="nav-link mx-2 " aria-current="page" href="index.php">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-2" href="find_donor.php">Find Donor</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-2" href="donate.php">Donate</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-2" href="contact.php">Contact Us</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                How it works
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="who_can_donate.php">Who can donate</a></li>
-                <li><a class="dropdown-item" href="why_donate.php">Why donate </a></li>
-              </ul>
-            </li>
-          </ul>
-          <ul class="navbar-nav ms-auto   ">
-            <li class="nav-item mx-2">
+<nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.php">Campus Donors</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                 <!-- First Modal (Login) -->
-                  <div class="modal fade" id="loginModal" aria-hidden="true" aria-labelledby="loginModalLabel" tabindex="-1">
-                    <div class="modal-dialog modal-dialog-centered">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title text-center fw-bold" id="loginModalLabel">Login</h5>
-                         
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          <form action="includes/login_folder/login.inc.php" method="POST">
-                            <!-- Username Input -->
-                            <div class="m-3">
-                              <label for="" class="form-label fw-bold">Username</label>
-                              <input type="text" class="form-control" id="" name="username">
-                            </div>
-                            <!-- Email Input -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.php">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="find_donor.php">Find Donor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="donate.php">Donate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.php">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            How it works
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="who_can_donate.php">Who can donate</a></li>
+                            <li><a class="dropdown-item" href="why_donate.php">Why donate</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="login-btn" data-bs-toggle="modal" href="#loginModal" role="button">
+                            <i class="fas fa-user me-2"></i>Login
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-                            <!-- Password Input -->
-                            <div class="m-3">
-                              <label for="" class="form-label fw-bold">Password</label>
-                              <input type="password" class="form-control" id="" name="password">
-                            </div>
-                            <div class="modal-footer d-flex flex-column">
-                              <input type="submit" name="login" value="Login" class="btn text-light mx-auto btn-style text-center modal-btn">
-                        
-
-                              <div class="p-2 text-center">Don't have an account? 
-                                <span style="color:#DA1212" data-bs-target="#registerModal" data-bs-toggle="modal" data-bs-dismiss="modal">Signup</span>
-                              </div>
-                              <!-- ERROR TEXT -->
-                              <!-- <div class="error-text">
-                              </div> -->
-                              <!-- ERROR TEXT -->
-                            </div>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-<!-- Second Modal (SIGNUP) -->
-              <div class="modal fade" id="registerModal" aria-hidden="true" aria-labelledby="registerModalLabel" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title text-center fw-bold" id="registerModalLabel">SIGNUP</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <form action="includes/signup_folder/signup.inc.php" method="POST">
-                        <!-- Username Input -->
-                        <div class="m-3">
-                          <label for="registerUsername" class="form-label fw-bold">Username</label>
-                          <input  type="text" class="form-control" id="registerUsername" name="username">
-                        </div>
-                        <!-- Email Input -->
-                        <div class="m-3">
-                          <label for="registerEmail" class="form-label fw-bold">Email address</label>
-                          <input type="email" class="form-control" id="registerEmail" name="email" placeholder="Your Email Address is safe">
-                        </div>
-                        <!-- Password Input -->
-                        <div class="m-3">
-                          <label for="registerPassword" class="form-label fw-bold">Password</label>
-                          <input  type="password" class="form-control" id="registerPassword" placeholder="Must contain numbers and letters" name="password">
-                        </div>
-                        <div class="modal-footer d-flex flex-column">
-                          <input type="submit" name="register" value="Register" class="btn text-light mx-auto btn-style text-center modal-btn">
-                          <div class="p-2 text-center">Already have an account? 
-                            <span style="color:#DA1212" data-bs-target="#loginModal" data-bs-toggle="modal" data-bs-dismiss="modal">Login</span>
-                          </div>
-
-                        </div>
-                      </form>
-                    </div>
-                  </div>
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" aria-hidden="true" aria-labelledby="loginModalLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Welcome Back</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-              </div>
-        
+                <div class="modal-body">
+                    <form action="includes/login_folder/login.inc.php" method="POST">
+                        <div class="mb-4">
+                            <label for="loginUsername" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="loginUsername" name="username" placeholder="Enter your username">
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginPassword" name="password" placeholder="Enter your password">
+                        </div>
+                        
+                        <div class="modal-footer">
+                            <button type="submit" name="login" class="modal-btn mx-auto">
+                                <i class="fas fa-sign-in-alt me-2"></i>Login
+                            </button>
+                            
+                            <div class="text-center mt-3">
+                                Don't have an account? 
+                                <span class="modal-switch-link" data-bs-target="#registerModal" data-bs-toggle="modal" data-bs-dismiss="modal">Sign up here</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<!-- Button to open the first modal -->
-<a class="text-light" data-bs-toggle="modal" href="#loginModal" role="button"> Login </a>
-                   <!--Double  Modal Test -->
-               
-            <!-- PHP TEST FOR PROFILE PICTURE AFTER LOGIN -->
-                <!-- <div class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="" alt="Profile" class="rounded-circle" width="30" height="30">
-                        Welcome,
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="dashboard.php">Dashboard</a></li>
-                        <li><a class="dropdown-item" href="change_profile_picture.php">Change Profile Picture</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="logout.php">Logout</a></li>
-                    </ul>
-                </div> -->
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" aria-hidden="true" aria-labelledby="registerModalLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerModalLabel">Join Campus Donors</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="includes/signup_folder/signup.inc.php" method="POST">
+                        <div class="mb-4">
+                            <label for="registerUsername" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="registerUsername" name="username" placeholder="Choose a username">
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="registerEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="registerEmail" name="email" placeholder="Your email is safe with us">
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="registerPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="registerPassword" name="password" placeholder="Must contain numbers and letters">
+                        </div>
+                        
+                        <div class="modal-footer">
+                            <button type="submit" name="register" class="modal-btn mx-auto">
+                                <i class="fas fa-user-plus me-2"></i>Create Account
+                            </button>
+                            
+                            <div class="text-center mt-3">
+                                Already have an account? 
+                                <span class="modal-switch-link" data-bs-target="#loginModal" data-bs-toggle="modal" data-bs-dismiss="modal">Login here</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+                   
 
           </ul>
         </div>
