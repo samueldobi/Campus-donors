@@ -39,6 +39,12 @@ To provide a reliable, student-focused platform that:
 
 <img width="1339" height="524" alt="Image" src="https://github.com/user-attachments/assets/3ce189a5-3949-4d61-b3bb-1354ccd68c5a" />
 
+<img width="1338" height="547" alt="Image" src="https://github.com/user-attachments/assets/2183fee0-2098-4441-ab9a-b6586ee346af" />
+
+<img width="657" height="566" alt="Image" src="https://github.com/user-attachments/assets/1fca7bcb-f78a-411b-9c7e-b1be9e6f0ec1" />
+
+<img width="814" height="598" alt="Image" src="https://github.com/user-attachments/assets/eb50a535-b9f2-4aa3-abcb-5d0dcc98c826" />
+
 <img width="1362" height="500" alt="Image" src="https://github.com/user-attachments/assets/caf047a7-f8d7-40df-bd06-10d5e564d637" />
 
 <img width="723" height="479" alt="campus-3" src="https://github.com/user-attachments/assets/c86823e5-403a-46e1-b1fe-46e7a0844304" />
